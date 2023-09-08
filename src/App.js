@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import AppHeader from './Pages/appHeader';
+import Footer from './Footer/footer';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import AboutContainer from './Pages/AboutContainer';
+import ProductsContainer from './Pages/ProductsContainer';
+import { useMediaQuery } from 'react-responsive';
+import ContactUsContainer from './Pages/ContactUsContainer'
 
 function App() {
+  const isDeskTopDevice = useMediaQuery({
+    query: "(min-device-width: 800px)",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth>
+      {/* <Container maxWidth> */}
+        <AppHeader isDeskTopDevice={isDeskTopDevice}/>
+        <AboutContainer isDeskTopDevice={isDeskTopDevice}/>
+        <ProductsContainer isDeskTopDevice={isDeskTopDevice}/>
+        <ContactUsContainer isDeskTopDevice={isDeskTopDevice}/>
+      {/* </Container> */}
+    </Container>
   );
 }
 
