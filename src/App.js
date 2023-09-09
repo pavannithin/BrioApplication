@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import AppHeader from './Pages/appHeader';
-import Footer from './Footer/footer';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import AboutContainer from './Pages/AboutContainer';
