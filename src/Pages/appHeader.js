@@ -1,6 +1,8 @@
-import { Grid } from '@mui/material';
-import AnchorIcon from '@mui/icons-material/Anchor';
+import { Grid, Paper, Box } from '@mui/material';
+import mainimage from './../asserts/MainPageIamges.jpg';
 import MenuIcon from '@mui/icons-material/Menu';
+import companyLogo from './../asserts/companylogo.png';
+// import Paper from 'material-ui/Paper';
 
 function showNavigationDetails(isDeskTopDevice) {
   if (!isDeskTopDevice) {
@@ -8,7 +10,7 @@ function showNavigationDetails(isDeskTopDevice) {
       <MenuIcon />
     </Grid>
   } else {
-    return <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
+    return <Grid sx={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold' }}>
       <Grid item sx={{ paddingRight: '5vh' }}>
         HOME
       </Grid>
@@ -31,18 +33,36 @@ function showNavigationDetails(isDeskTopDevice) {
   }
 }
 
+const styles = {
+  paperContainer: {
+    backgroundImage: `url(${mainimage})`,
+    backgroundSize: 'cover'
+  }
+};
+
+function showHeader(isDeskTopDevice) {
+  if(isDeskTopDevice) {
+return  <img src={companyLogo} alt="BigCo Inc. logo" height='95vh' />
+  } else {
+    return  <img src={companyLogo} alt="BigCo Inc. logo" height='55vh' />
+  }
+}
+
 export default function AppHeader(props) {
   return (
-    <Grid sx={{ height: '50vh', paddingTop: '1vh', backgroundColor: 'azure' }}>
-      <Grid sx={{ display: 'flex', justifyContent: 'space-between', height: '6vh', backgroundColor: 'green', alignItems: 'center' }}>
-        <Grid item sx={{ backgroundColor: 'yellow' }}>
-          <AnchorIcon />
+    <Box>
+      <Paper style={styles.paperContainer}>
+        <Grid sx={{ height: '90vh', paddingTop: '7vh', top: '0' }}>
+          <Grid sx={{ display: 'flex', padding: '0vh 2vh 0vh 2vh', justifyContent: 'space-between', maxHeight: '13vh', backgroundColor: 'white', alignItems: 'center' }}>
+            <Grid item>
+             {showHeader(props.isDeskTopDevice)}
+            </Grid>
+            <Grid item sx={{ color: '#967008' }}>
+              {showNavigationDetails(props.isDeskTopDevice)}
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item sx={{ backgroundColor: 'yellow' }}>
-          {showNavigationDetails(props.isDeskTopDevice)}
-        </Grid>
-      </Grid>
-
-    </Grid>
+      </Paper>
+    </Box>
   );
 }

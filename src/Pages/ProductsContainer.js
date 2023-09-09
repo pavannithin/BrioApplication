@@ -2,141 +2,168 @@ import { Grid, Box } from '@mui/material';
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
+import AutomaticElevators from './../asserts/automaticElevator.png';
+import ChairElevators from './../asserts/chair_elevators.png';
+import GlassElevator from './../asserts/glassElevator.png';
+import HydraulicElevator from './../asserts/HydrolicElevator.png';
+import ResidentialElevators from './../asserts/residensialElevator.png';
+import StainlessSteel1 from './../asserts/stainlessSteelEvevator.png';
+import RoundGlass from './../asserts/roundGlassElevator.png';
+import StainlessSteel2 from './../asserts/stainlesssteelElevators2.png';
 
-function Item(props) {
+function Items(props) {
   return (
-    <Paper sx={{ height: '40vh' }}>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-
-      <Button className="CheckButton">
-        Check it out!
-      </Button>
+    <Paper sx={{ height: '65vh', backgroundImage: `url(${props.item.description})`, backgroundSize: 'cover', borderRadius: '1vh' }}>
+      <Box sx={{ height: '52vh', padding: '1vh', color: '#00264d' }}><Box sx={{backgroundColor: 'antiquewhite', width:'50%', paddingLeft: '2vh', opacity: '0.9', borderRadius: '1vh'}}><h1>{props.item.name}</h1></Box></Box>
+      <Box sx={{ backgroundColor: 'antiquewhite', width: '100%', height: '5vh', paddingLeft: '70vh', opacity: '0.6' }}><Box sx={{ alignContent: 'center' }}><h2>{props.item.buttonDesc}</h2></Box></Box>
     </Paper>
   )
 }
 
-function showTransmission(isDeskTopDevice, deskTopitems, mobileitems){
+function showTransmission(isDeskTopDevice, deskTopitems, mobileitems) {
   if (!isDeskTopDevice) {
-    return mobileitems.map((item, i) => <Item key={i} item={item} />)
- } else {
-    return deskTopitems.map((item, i) => <Grid container spacing={1}><Grid item xs><Item key={i} item={item[0]} /></Grid> <Grid item xs><Item key={i} item={item[1]} /></Grid></Grid>)
- }
+    return mobileitems.map((item, i) => <Items key={i} item={item} />)
+  } else {
+    return deskTopitems.map((item, i) => <Grid container spacing={1}><Grid item xs><Items key={i} item={item[0]} /></Grid> <Grid item xs><Items key={i} item={item[1]} /></Grid></Grid>)
+  }
 }
 function ProductsContainer(props) {
   var deskTopitems = [
     [
       {
-        name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!"
+        name: "Automatic Elevators",
+        description: AutomaticElevators,
+        buttonDesc: "Know More.."
       },
       {
-        name: "Random Name #11",
-        description: "Hello World!"
+        name: "Chair Elevators",
+        description: ChairElevators,
+        buttonDesc: "Know More.."
       }
     ]
     ,
     [
       {
-        name: "Random Name #2",
-        description: "Probably the most random thing you have ever seen!"
+        name: "Glass Elevators",
+        description: GlassElevator,
+        buttonDesc: "Know More.."
       },
       {
-        name: "Random Name #22",
-        description: "Hello World!"
+        name: "Hydraulic Elevators",
+        description: HydraulicElevator,
+        buttonDesc: "Know More.."
       }
     ],
     [
       {
-        name: "Random Name #2",
-        description: "Probably the most random thing you have ever seen!"
+        name: "Residential Elevators",
+        description: ResidentialElevators,
+        buttonDesc: "Know More.."
       },
       {
-        name: "Random Name #22",
-        description: "Hello World!"
+        name: "Stainless Steel #1",
+        description: StainlessSteel1,
+        buttonDesc: "Know More.."
       }
     ],
     [
       {
-        name: "Random Name #2",
-        description: "Probably the most random thing you have ever seen!"
+        name: "Round Glass Elevators",
+        description: RoundGlass,
+        buttonDesc: "Know More.."
       },
       {
-        name: "Random Name #22",
-        description: "Hello World!"
+        name: "Stainless Steel #2",
+        description: StainlessSteel2,
+        buttonDesc: "Know More.."
       }
     ],
     [
       {
-        name: "Random Name #2",
-        description: "Probably the most random thing you have ever seen!"
+        name: "Residential Elevators",
+        description: ResidentialElevators,
+        buttonDesc: "Know More.."
       },
       {
-        name: "Random Name #22",
-        description: "Hello World!"
+        name: "Stainless Steel #1",
+        description: StainlessSteel1,
+        buttonDesc: "Know More.."
       }
     ]
   ]
 
   var mobileitems = [
+
     {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!"
+      name: "Automatic Elevators",
+      description: "AutomaticElevators",
+      buttonDesc: "Know More.."
     },
     {
-      name: "Random Name #11",
-      description: "Hello World!"
+      name: "Chair Elevators",
+      description: "ChairElevators",
+      buttonDesc: "Know More.."
+    }
+
+    ,
+
+    {
+      name: "Glass Elevators",
+      description: "GlassElevator",
+      buttonDesc: "Know More.."
+    },
+    {
+      name: "Hydraulic Elevators",
+      description: "HydraulicElevator",
+      buttonDesc: "Know More.."
     }
     ,
+
     {
-      name: "Random Name #2",
-      description: "Probably the most random thing you have ever seen!"
+      name: "Residential Elevators",
+      description: "ResidentialElevators",
+      buttonDesc: "Know More.."
     },
     {
-      name: "Random Name #22",
-      description: "Hello World!"
+      name: "Stainless Steel #1",
+      description: "StainlessSteel#1",
+      buttonDesc: "Know More.."
+    }
+    ,
+
+    {
+      name: "Round Glass Elevators",
+      description: "RoundGlass",
+      buttonDesc: "Know More.."
+    },
+    {
+      name: "Stainless Steel #2",
+      description: "StainlessSteel#2",
+      buttonDesc: "Know More.."
     }
     ,
 
     {
       name: "Random Name #2",
-      description: "Probably the most random thing you have ever seen!"
+      description: "Probably the most random thing you have ever seen!",
+      buttonDesc: "Know More.."
     },
     {
       name: "Random Name #22",
-      description: "Hello World!"
-    }
-    ,
-
-    {
-      name: "Random Name #2",
-      description: "Probably the most random thing you have ever seen!"
-    },
-    {
-      name: "Random Name #22",
-      description: "Hello World!"
-    }
-    ,
-
-    {
-      name: "Random Name #2",
-      description: "Probably the most random thing you have ever seen!"
-    },
-    {
-      name: "Random Name #22",
-      description: "Hello World!"
+      description: "Hello World!",
+      buttonDesc: "Know More.."
     }
 
   ]
 
   return (
-    <Grid sx={{ height: '48vh', paddingTop: '1vh', backgroundColor: 'blue' }}>
-      <Grid item sx={{ height: '43vh', padding: '0.5vh' }}>
+    <Grid sx={{ height: '73vh', paddingTop: '1vh' }}>
+      <Grid item sx={{ height: '60vh', padding: '0.5' }}>
         <Carousel
           next={() => {/* Do stuff */ }}
           prev={() => {/* Do other stuff */ }}
         >
-         {showTransmission(props.isDeskTopDevice, deskTopitems, mobileitems )}
+          {showTransmission(props.isDeskTopDevice, deskTopitems, mobileitems)}
         </Carousel>
       </Grid>
     </Grid>
