@@ -8,6 +8,8 @@ import CompanyProfileContainer from './Pages/CompanyProfileContainer';
 import ProductsContainer from './Pages/ProductsContainer';
 import { useMediaQuery } from 'react-responsive';
 import ContactUsContainer from './Pages/ContactUsContainer'
+import Bigbanner from './Pages/BigbannerContainer';
+import BigbannerContainer from './Pages/Bigbanner1Container';
 
 function App() {
   const isDeskTopDevice = useMediaQuery({
@@ -16,11 +18,17 @@ function App() {
 
   return (
     <>
-      <AppHeader isDeskTopDevice={isDeskTopDevice} />
+        <AppHeader isDeskTopDevice={isDeskTopDevice} />
       <Container maxWidth>
+      <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
         <ProductsContainer isDeskTopDevice={isDeskTopDevice} />
+        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
         <CompanyProfileContainer isDeskTopDevice={isDeskTopDevice} />
+
+        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
         <ContactUsContainer isDeskTopDevice={isDeskTopDevice} />
+        {/* Final Footer Details */}
+        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
       </Container>
     </>
 

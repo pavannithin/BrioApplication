@@ -21,10 +21,7 @@ function showNavigationDetails(isDeskTopDevice) {
         SERVICES
       </Grid>
       <Grid item sx={{ paddingRight: '5vh' }}>
-        ABOUT
-      </Grid>
-      <Grid item sx={{ paddingRight: '5vh' }}>
-        HELP
+        COMPANY
       </Grid>
       <Grid item sx={{ paddingRight: '5vh' }}>
         FOLLOW US

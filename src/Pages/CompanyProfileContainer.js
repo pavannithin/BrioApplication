@@ -30,7 +30,7 @@ function showImage(isDeskTopDevice) {
 
 function CompanyProfileContainer(props) {
   return (
-    <Grid container sx={{ height: '90vh', backgroundColor: 'orange', alignItems: 'center', color: '#00264d' }}>
+    <Grid container sx={{ height: '55vh', backgroundColor: 'orange', alignItems: 'center', color: '#00264d' }}>
       {showImage(props.isDeskTopDevice)}
     </Grid>
   );

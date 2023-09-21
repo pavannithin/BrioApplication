@@ -13,9 +13,9 @@ import StainlessSteel2 from './../asserts/stainlesssteelElevators2.png';
 
 function Items(props) {
   return (
-    <Paper sx={{ height: '65vh', backgroundImage: `url(${props.item.description})`, backgroundSize: 'cover', borderRadius: '1vh' }}>
-      <Box sx={{ height: '52vh', padding: '1vh', color: '#00264d' }}><Box sx={{backgroundColor: 'antiquewhite', width:'50%', paddingLeft: '2vh', opacity: '0.9', borderRadius: '1vh'}}><h1>{props.item.name}</h1></Box></Box>
-      <Box sx={{ backgroundColor: 'antiquewhite', width: '100%', height: '5vh', paddingLeft: '70vh', opacity: '0.6' }}><Box sx={{ alignContent: 'center' }}><h2>{props.item.buttonDesc}</h2></Box></Box>
+    <Paper sx={{ height: '55vh', backgroundImage: `url(${props.item.description})`, backgroundSize: 'cover', borderRadius: '1vh' }}>
+      <Box sx={{ height: '45vh', padding: '1vh', color: '#00264d' }}><Box sx={{backgroundColor: 'antiquewhite', width:'50%', paddingLeft: '2vh', opacity: '0.9', borderRadius: '1vh'}}><h1>{props.item.name}</h1></Box></Box>
+      <Box sx={{ backgroundColor: 'antiquewhite', width: '100%', height: '5vh', paddingLeft: '5vh', opacity: '0.6' }}><Box sx={{ alignContent: 'center' }}><h2>{props.item.buttonDesc}</h2></Box></Box>
     </Paper>
   )
 }
@@ -157,8 +157,8 @@ function ProductsContainer(props) {
   ]
 
   return (
-    <Grid sx={{ height: '73vh', paddingTop: '1vh' }}>
-      <Grid item sx={{ height: '60vh', padding: '0.5' }}>
+    <Grid sx={{ height: '60vh', paddingTop: '1vh' }}>
+      <Grid item sx={{ height: '55vh', padding: '1vh' }}>
         <Carousel
           next={() => {/* Do stuff */ }}
           prev={() => {/* Do other stuff */ }}
