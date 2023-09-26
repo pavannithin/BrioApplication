@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AppHeader from './Pages/appHeader';
@@ -9,7 +10,9 @@ import ProductsContainer from './Pages/ProductsContainer';
 import { useMediaQuery } from 'react-responsive';
 import ContactUsContainer from './Pages/ContactUsContainer'
 import Bigbanner from './Pages/BigbannerContainer';
-import BigbannerContainer from './Pages/Bigbanner1Container';
+import CompanyFooterContainer from './Pages/CompanyFooterContainer';
+import CompanySpecs from './Pages/CompanySpecsContainer';
+import ProductSpecsContainer from './Pages/ProductSpecsContainer';
 
 function App() {
   const isDeskTopDevice = useMediaQuery({
@@ -20,16 +23,17 @@ function App() {
     <>
         <AppHeader isDeskTopDevice={isDeskTopDevice} />
       <Container maxWidth>
-      <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
         <ProductsContainer isDeskTopDevice={isDeskTopDevice} />
         <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
+        <ProductSpecsContainer isDeskTopDevice={isDeskTopDevice}/>
+        {/* Product embracemnets/ eligance from booklet */}
+        {/* <Bigbanner isDeskTopDevice={isDeskTopDevice}/> */}
         <CompanyProfileContainer isDeskTopDevice={isDeskTopDevice} />
-
-        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
+        <CompanySpecs isDeskTopDevice={isDeskTopDevice}/>
         <ContactUsContainer isDeskTopDevice={isDeskTopDevice} />
         {/* Final Footer Details */}
-        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
       </Container>
+      <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice}/>
     </>
 
   );

@@ -13,9 +13,9 @@ import StainlessSteel2 from './../asserts/stainlesssteelElevators2.png';
 
 function Items(props) {
   return (
-    <Paper sx={{ height: '55vh', backgroundImage: `url(${props.item.description})`, backgroundSize: 'cover', borderRadius: '1vh' }}>
-      <Box sx={{ height: '45vh', padding: '1vh', color: '#00264d' }}><Box sx={{backgroundColor: 'antiquewhite', width:'50%', paddingLeft: '2vh', opacity: '0.9', borderRadius: '1vh'}}><h1>{props.item.name}</h1></Box></Box>
-      <Box sx={{ backgroundColor: 'antiquewhite', width: '100%', height: '5vh', paddingLeft: '5vh', opacity: '0.6' }}><Box sx={{ alignContent: 'center' }}><h2>{props.item.buttonDesc}</h2></Box></Box>
+    <Paper sx={{ height: '53vh', backgroundImage: `url(${props.item.description})`, backgroundSize: 'cover', borderRadius: '1vh' }}>
+      <Box sx={{ height: '80%', padding: '1%', color: '#00264d' }}><Box sx={{backgroundColor: 'antiquewhite', width:'50%', paddingLeft: '2%', opacity: '0.9', borderRadius: '1vh'}}><h1>{props.item.name}</h1></Box></Box>
+      <Box sx={{ backgroundColor: 'antiquewhite', width: '100%', paddingLeft: '65%', opacity: '0.6' }}><Box sx={{ alignContent: 'center' }}><h2>{props.item.buttonDesc}</h2></Box></Box>
     </Paper>
   )
 }

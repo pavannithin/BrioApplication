@@ -1,3 +1,4 @@
+import React from 'react';
 import { Grid, Paper, Box } from '@mui/material';
 import mainimage from './../asserts/MainPageIamges.jpg';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -33,7 +34,10 @@ function showNavigationDetails(isDeskTopDevice) {
 const styles = {
   paperContainer: {
     backgroundImage: `url(${mainimage})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: '850px',
+    width: '100%'
   }
 };
 
@@ -49,7 +53,7 @@ export default function AppHeader(props) {
   return (
     <Box>
       <Paper style={styles.paperContainer}>
-        <Grid sx={{ height: '90vh', paddingTop: '7vh', top: '0' }}>
+        <Grid sx={{ height: '70vh', paddingTop: '7vh', top: '0' }}>
           <Grid sx={{ display: 'flex', padding: '0vh 2vh 0vh 2vh', justifyContent: 'space-between', maxHeight: '13vh', backgroundColor: 'white', alignItems: 'center' }}>
             <Grid item>
              {showHeader(props.isDeskTopDevice)}

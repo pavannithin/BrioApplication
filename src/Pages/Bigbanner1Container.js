@@ -1,3 +1,4 @@
+import React from 'react';
 import { Grid, Box } from '@mui/material';
 import { Paper } from '@mui/material'
 import companyprofile from './../asserts/bigbanner.png';
