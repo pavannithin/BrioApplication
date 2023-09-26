@@ -1,10 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AppHeader from './Pages/appHeader';
 
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 import CompanyProfileContainer from './Pages/CompanyProfileContainer';
 import ProductsContainer from './Pages/ProductsContainer';
 import { useMediaQuery } from 'react-responsive';
