@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AppHeader from './Pages/appHeader';
-
+import { Box } from '@mui/material';
 import Container from '@mui/material/Container';
 import CompanyProfileContainer from './Pages/CompanyProfileContainer';
 import ProductsContainer from './Pages/ProductsContainer';
@@ -11,6 +11,12 @@ import Bigbanner from './Pages/BigbannerContainer';
 import CompanyFooterContainer from './Pages/CompanyFooterContainer';
 import CompanySpecs from './Pages/CompanySpecsContainer';
 import ProductSpecsContainer from './Pages/ProductSpecsContainer';
+import ProductsContainerV2 from './Pages/ProductsContainerV2';
+import MinPageAboutUsContainer from './Pages/MinPageAboutUsContainer';
+import HomeSeriesElevationContainer from './Pages/HomeSeriesElevationContainer';
+import NoPitElevationsContainer from './Pages/NoPitElevations';
+import ProductsElevationContainer from './Pages/ProductsElevationContainer';
+
 
 function App() {
   const isDeskTopDevice = useMediaQuery({
@@ -19,19 +25,32 @@ function App() {
 
   return (
     <>
-        <AppHeader isDeskTopDevice={isDeskTopDevice} />
+    {/* C1 */}
+      <AppHeader isDeskTopDevice={isDeskTopDevice} /> 
       <Container maxWidth>
-        <ProductsContainer isDeskTopDevice={isDeskTopDevice} />
-        <Bigbanner isDeskTopDevice={isDeskTopDevice}/>
-        <ProductSpecsContainer isDeskTopDevice={isDeskTopDevice}/>
+         {/* C2 */}
+        {/* <ProductsContainer isDeskTopDevice={isDeskTopDevice} /> */}
+        {/* <ProductsContainerV2 isDeskTopDevice={isDeskTopDevice}/> */}
+        <MinPageAboutUsContainer isDeskTopDevice={isDeskTopDevice}/>
+         {/* C3 */}
+        {/* <ProductSpecsContainer isDeskTopDevice={isDeskTopDevice} /> */}
+        <HomeSeriesElevationContainer isDeskTopDevice={isDeskTopDevice}/>
+         {/* C4 */}
+         <NoPitElevationsContainer isDeskTopDevice={isDeskTopDevice}/>
+        {/* <Bigbanner isDeskTopDevice={isDeskTopDevice} /> */}
         {/* Product embracemnets/ eligance from booklet */}
         {/* <Bigbanner isDeskTopDevice={isDeskTopDevice}/> */}
-        <CompanyProfileContainer isDeskTopDevice={isDeskTopDevice} />
-        <CompanySpecs isDeskTopDevice={isDeskTopDevice}/>
-        <ContactUsContainer isDeskTopDevice={isDeskTopDevice} />
+         {/* C5 */}
+         <ProductsElevationContainer isDeskTopDevice={isDeskTopDevice}/>
+        {/* <CompanyProfileContainer isDeskTopDevice={isDeskTopDevice} /> */}
+         {/* C6 */}
+        {/* <CompanySpecs isDeskTopDevice={isDeskTopDevice} /> */}
+         {/* C7 */}
+        {/* <ContactUsContainer isDeskTopDevice={isDeskTopDevice} /> */}
         {/* Final Footer Details */}
       </Container>
-      <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice}/>
+       {/* C8 */}
+      <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice} />
     </>
 
   );

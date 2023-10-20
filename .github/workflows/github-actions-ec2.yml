@@ -1,21 +1,22 @@
-name: React CI
-
-on:
-  push:
-    branches:
-      - "main"
-
+name: Remote ssh command
+on: [push]
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [15.x]
-    
     steps:
-      - uses: main/checkout@v1
-      - run: npm install
-      - uses: i-spartan/BrioApplication@main
+      - name: Executing remote ssh commands using ssh key
+        uses: i-spartan/BrioApplication@main
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/YOUR/TARGET/DIR
+            npm install
+            npm build
+            npm i serve
+            serve -p 3000 build/
+
         
      

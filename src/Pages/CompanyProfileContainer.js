@@ -7,11 +7,11 @@ function showImage(isDeskTopDevice) {
   if (isDeskTopDevice) {
     return <>
       <Grid xs sx={{ width: '50vh', height: '100%', backgroundColor: 'white', padding: '1vh' }}>
-        <Box sx={{ height: '66%',padding: '15vh 15vh 15vh 15vh', fontSize: '1rem', color: '#00264d' }}>
+        <Box sx={{ height: '66%', padding: '10vh 15vh 15vh 15vh', fontSize: '1rem', color: '#00264d' }}>
           <h2>Company Profile</h2>
-          <>Brio ELEVATORS, the pioneer of the Indian Elevator Industry was established in 2022, head quartered in Hyderabad and operating in Pune, Bangalore, Ahmedabad, installs, maintains and modernizes a wide range of elevators which includes, Gearless Machine Room-less Elevators for Passenger, Hospital, Home, Automobile & Freight environments.
-
-            With a Legacy in Vertical Transportation, Brio is known for high quality products and premium services.</>
+          <>Brio Elevators!! India's Leading Certified Elevator Company, Head quartered in Hyderabad, it operates all over India . We're Globally connected to the foremost Manufacturers of Mobility Solutions, Renowned for their Safety, Quality, and Cutting-edge Technology.
+            Discover our Premium MR Elevators, MRL Elevators, Hydraulic Elevators, and Belt Elevators – all are TÜV Certified for your peace of mind. Experience Innovation in every ride, tailored to your preferences, and enhance your day-to-day living. Elevate your Home Living with Brio Elevators. Your vertical journey starts here.
+          </>
         </Box>
       </Grid>
       <Grid xs sx={{ height: '100%', backgroundColor: 'white', padding: '1vh' }}>
@@ -31,7 +31,7 @@ function showImage(isDeskTopDevice) {
 
 function CompanyProfileContainer(props) {
   return (
-    <Grid container sx={{ height: '55vh', backgroundColor: 'orange', alignItems: 'center', color: '#00264d' }}>
+    <Grid container sx={{ height: '75vh', alignItems: 'center', color: '#00264d', paddingTop: '6%' }}>
       {showImage(props.isDeskTopDevice)}
     </Grid>
   );
