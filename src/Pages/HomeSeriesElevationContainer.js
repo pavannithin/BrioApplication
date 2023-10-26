@@ -16,8 +16,8 @@ function HomeSeriesElevationContainer(props) {
       <Grid item sx={{ width: '54%', padding: '10vh 7vh 0vh 0vh' }}>
         <Grid>
           <Grid item>
-            <Typography variant='h5' sx={{ padding: '3vh 3vh 1vh 3vh' }}> Home lifts at their best </Typography>
-            <Typography variant='body1' sx={{ padding: '3vh 3vh 1vh 3vh' }}>
+            <Typography variant='h4' sx={{ padding: '3vh 3vh 1vh 3vh' }}> Home lifts at their best </Typography>
+            <Typography variant='h6' sx={{ padding: '3vh 3vh 1vh 3vh' }}>
               Providing Lift products right from small home lifts to large lifts for commercial buildings and public utility
             </Typography>
           </Grid>
@@ -31,7 +31,7 @@ function HomeSeriesElevationContainer(props) {
             </Box>
             <Grid sx={{paddingTop: '15vh'}}>
               <Grid item>
-              <Button variant="contained" sx={{ padding: '3vh', fontSize: '0.9rem' }}>Download Broucher</Button>
+              <Button variant="contained" sx={{ padding: '3vh', fontSize: '1rem' }}>Download Broucher</Button>
               </Grid>
             </Grid>
           </Grid>

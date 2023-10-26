@@ -63,18 +63,18 @@ export default function AppHeader(props) {
             </Grid>
           </Grid>
           <Grid sx={{ display: 'flex', justifyContent: 'center', height: '62vh', alignItems: 'center', flexDirection: 'column' }}>
-            <Grid item sx={{ backgroundColor: '#39303029', padding: '2vh 20vh 2vh 20vh' }}>
+            <Grid item sx={{ backgroundColor: '#39303026', padding: '2vh 20vh 2vh 20vh' }}>
               <Grid sx={{ display: 'flex', justifyContent: 'center'}}>
                 <Grid item sx={{paddingRight: '0.8vh'}}>
                 <FormatQuoteIcon sx={{color: 'white', transform: 'rotate(180deg)'}}/>
                 </Grid>
                 <Grid item>
-                <Box sx={{ fontSize: '3rem', color: 'white' }}> BRIO, ELEVATES YOUR EXPECTATIONS</Box>
+                <Box sx={{ fontSize: '3.7rem', color: 'white' }}> BRIO, ELEVATES YOUR EXPECTATIONS</Box>
                 </Grid>
               </Grid>
             </Grid>
             <Grid item padding='2vh'>
-              <Button variant="contained" sx={{ paddingRight: '3vh', paddingLeft: '3vh', fontSize: '0.9rem' }}>Get Free Site Feasibility Check</Button>
+              <Button variant="contained" sx={{ paddingRight: '3vh', paddingLeft: '3vh', fontSize: '1.2rem' }}>Get Free Site Feasibility Check</Button>
             </Grid>
           </Grid>
           <Grid sx={{ display: 'flex', justifyContent: 'end', height: '24vh', alignItems: 'center', padding: '5vh' }}>

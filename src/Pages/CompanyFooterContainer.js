@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Box } from '@mui/material';
+import { Grid, Box, Typography } from '@mui/material';
 import { Divider } from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -11,7 +11,7 @@ function solutionsFor() {
   return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
     <Grid>
       {/* <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><SupportAgentIcon sx={{ fontSize: 60 }} color="action" /></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><h3>Solutions For</h3></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><Typography variant='h6'>Solutions For</Typography></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>Hassel free support even after sale.</Grid>
     </Grid>
   </Box>
@@ -21,7 +21,7 @@ function products() {
   return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
     <Grid>
       {/* <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><SupportAgentIcon sx={{ fontSize: 60 }} color="action" /></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><h3>Products</h3></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><Typography variant='h6'>Products</Typography></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>Hassel free support even after sale.</Grid>
     </Grid>
   </Box>
@@ -31,7 +31,7 @@ function elevatorsAndDesigns() {
   return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
     <Grid>
       {/* <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><AssignmentIcon sx={{ fontSize: 60 }} color="action" /></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><h3>Elevators And Designs</h3></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><Typography variant='h6'>Elevators And Designs</Typography></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>We provide tax-relief opportunity.</Grid>
     </Grid>
   </Box>
@@ -41,7 +41,7 @@ function company() {
   return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
     <Grid>
       {/* <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><DownloadIcon sx={{ fontSize: 60 }} color="action" /></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><h3>Company</h3></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><Typography variant='h6'>Company</Typography></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>Download Broucher.</Grid>
     </Grid>
   </Box>
@@ -59,7 +59,7 @@ function miscellaneous() {
 
 function CompanyFooterContainer(props) {
   return (
-    <Box sx={{ height: '55vh', border: '1px solid white', borderRadius: '1vh', backgroundColor: '#615e55', padding: '5%', color: 'white' }}>
+    <Box sx={{ height: '55vh', backgroundColor: '#565454', padding: '4%', color: 'white' }}>
 
       <Grid item>
         <Grid sx={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -82,9 +82,6 @@ function CompanyFooterContainer(props) {
             {company()}
           </Grid>
           <Grid item>
-          </Grid>
-          <Grid item sx={{ display: 'contents' }}>
-            {miscellaneous()}
           </Grid>
         </Grid>
 

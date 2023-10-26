@@ -37,10 +37,10 @@ function NoPitElevations(props) {
               padding: '3% 1% 1% 1%'
             }}
           >
-            <Box sx={{ width: '53%', height: '92%' }}>
+            <Box sx={{ width: '50%', height: '92%' }}>
 
               <Box>
-                <Typography variant='h6'>Brio's NEW GENERATION lifts</Typography>
+                <Typography variant='h5'>Brio's NEW GENERATION lifts</Typography>
               </Box>
               <Grid sx={{ display: 'flex', flexWrap: 'wrap', paddingTop: '8%' }}>
 
@@ -54,12 +54,12 @@ function NoPitElevations(props) {
                         <Grid item>
                           <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                             <Grid item sx={{ padding: '1vh' }}>
-                              <Typography variant='h6'>No Pit</Typography>
+                              <Typography variant='h5'>No Pit</Typography>
                             </Grid>
                           </Grid>
                         </Grid>
                         <Grid item textAlign='start' color='white'>
-                          <Typography variant='body1'>Our Home elevators do not require
+                          <Typography variant='h6'>Our Home elevators do not require
                             a pit of more than 150 to 250mm</Typography>
                         </Grid>
                       </Grid>
@@ -77,12 +77,12 @@ function NoPitElevations(props) {
                         <Grid item>
                           <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                             <Grid item sx={{ padding: '1vh' }}>
-                              <Typography variant='h6'>NO HEAD ROOM</Typography>
+                              <Typography variant='h5'>NO HEAD ROOM</Typography>
                             </Grid>
                           </Grid>
                         </Grid>
                         <Grid item textAlign='start' color='white'>
-                          <Typography variant='body1'>Headroom is meant for commercial
+                          <Typography variant='h6'>Headroom is meant for commercial
                             elevators. We require an FFL- Ceiling
                             of only 2500mm
                           </Typography>
@@ -102,12 +102,12 @@ function NoPitElevations(props) {
                         <Grid item>
                           <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                             <Grid item sx={{ padding: '1vh' }}>
-                              <Typography variant='h6'>NO MACHINE ROOM</Typography>
+                              <Typography variant='h5'>NO MACHINE ROOM</Typography>
                             </Grid>
                           </Grid>
                         </Grid>
                         <Grid item textAlign='start' color='white'>
-                          <Typography variant='body1'>As per machine directive code,
+                          <Typography variant='h6'>As per machine directive code,
                             Machine room should never be
                             placed inside the elevator shaft</Typography>
                         </Grid>
@@ -126,12 +126,12 @@ function NoPitElevations(props) {
                         <Grid item>
                           <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                             <Grid item sx={{ padding: '1vh' }}>
-                              <Typography variant='h6'>NO GOVERNMENT LICENSE</Typography>
+                              <Typography variant='h5'>NO GOVERNMENT LICENSE</Typography>
                             </Grid>
                           </Grid>
                         </Grid>
                         <Grid item textAlign='start' color='white'>
-                          <Typography variant='body1'>No government license is required
+                          <Typography variant='h6'>No government license is required
                             as we consume only single phase
                             electricity power</Typography>
                         </Grid>
@@ -150,12 +150,12 @@ function NoPitElevations(props) {
                         <Grid item>
                           <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                             <Grid item sx={{ padding: '1vh' }}>
-                              <Typography variant='h6'>NO AMC</Typography>
+                              <Typography variant='h5'>NO AMC</Typography>
                             </Grid>
                           </Grid>
                         </Grid>
                         <Grid item textAlign='start' color='white'>
-                          <Typography variant='body1'>Our patented technology allows
+                          <Typography variant='h6'>Our patented technology allows
                             our client to feel absolutely safe
                             without routine maintenance</Typography>
                         </Grid>
