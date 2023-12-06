@@ -25,7 +25,7 @@ function showImage(isDeskTopDevice) {
 
 function AboutContainer(props) {
   return (
-    <Grid container sx={{ height: '50vh', backgroundColor: 'orange', alignItems: 'center', padding: '1vh' }}>
+    <Grid container sx={{ height: '50vh', backgroundColor: 'orange', alignItems: 'center' }}>
       {showImage(props.isDeskTopDevice)}
     </Grid>
   );

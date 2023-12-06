@@ -1,11 +1,13 @@
 import React from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import { Divider } from '@mui/material';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PinterestIcon from '@mui/icons-material/Pinterest';
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import { HeaderColor, GoldColor, emailId } from "./Constants";
+import MailIcon from "@mui/icons-material/Mail";
 
 function solutionsFor() {
   return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
@@ -59,66 +61,32 @@ function miscellaneous() {
 
 function CompanyFooterContainer(props) {
   return (
-    <Box sx={{ height: '55vh', backgroundColor: '#565454', padding: '4%', color: 'white' }}>
-
-      <Grid item>
-        <Grid sx={{ display: 'flex', justifyContent: 'space-around' }}>
-          <Grid item sx={{ display: 'contents' }}>
-            {solutionsFor()}
-          </Grid>
-          <Grid item>
-          </Grid>
-          <Grid item sx={{ display: 'contents' }}>
-            {products()}
-          </Grid>
-          <Grid item>
-          </Grid>
-          <Grid item sx={{ display: 'contents' }}>
-            {elevatorsAndDesigns()}
-          </Grid>
-          <Grid item>
-          </Grid>
-          <Grid item sx={{ display: 'contents' }}>
-            {company()}
-          </Grid>
-          <Grid item>
-          </Grid>
-        </Grid>
-
-      </Grid>
-      <Grid item>
-        <Grid>
-          <Grid item>
-            <Divider sx={{ backgroundColor: 'grey' }} />
-          </Grid>
-          <Grid item>
-            <Grid>
-              <Box sx={{ display: 'flex', justifyContent: 'center', padding: '1%' }}>
+    <Box >
+      
+            <Grid sx={{ height: '6vh', backgroundColor: '#565454', 
+            color: 'white', display: 'flex', 
+            justifyContent: 'center', alignItems: 'center', flexDirection: 'row'}}>
+            <Grid item sx={{width: '6%'}}>
+                <Grid sx={{display: 'flex'}}>
                 <Grid item>
-                  <YouTubeIcon sx={{ fontSize: 60, padding: '1%' }} />
+                  <YouTubeIcon sx={{ fontSize: '1.5rem', padding: '0.4rem' }} />
+                </Grid>
+                 <Grid item>
+                  <FacebookIcon sx={{ fontSize: '1.5rem', padding: '0.4rem' }} />
                 </Grid>
                 <Grid item>
-                  <FacebookIcon sx={{ fontSize: 60, padding: '1%' }} />
+                  <InstagramIcon sx={{ fontSize: '1.5rem', padding: '0.4rem' }} />
                 </Grid>
                 <Grid item>
-                  <InstagramIcon sx={{ fontSize: 60, padding: '1%' }} />
+                  <LinkedInIcon sx={{ fontSize: '1.5rem', padding: '0.4rem' }} />
                 </Grid>
                 <Grid item>
-                  <LinkedInIcon sx={{ fontSize: 60, padding: '1%' }} />
+                  <PinterestIcon sx={{ fontSize: '1.5rem', padding: '0.4rem' }} />
                 </Grid>
-                <Grid item>
-                  <PinterestIcon sx={{ fontSize: 60, padding: '1%' }} />
                 </Grid>
-              </Box>
-
+              </Grid>
+              <Grid item sx={{fontSize: '0.9rem', width: '80%', textAlign: 'center'}}>Copyrights ©2023 Brio Elevators. All Rights Reserved</Grid>   
             </Grid>
-          </Grid>
-          <Grid item>
-            <Divider sx={{ backgroundColor: 'grey' }} />
-          </Grid>
-        </Grid>
-      </Grid>
-
     </Box>
   );
 }

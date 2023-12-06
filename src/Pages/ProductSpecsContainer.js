@@ -57,83 +57,52 @@ function showSubmitForm() {
 }
 
 function ExpertiseInGearLess() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '22%', fontSize: '0.8rem' }}>
     <Grid>
-      {/* <Grid item paddingLeft='4vh'>
-        <h2> Contact details</h2>
-      </Grid> */}
-      {/* <Grid item><img height='100vh' src="https://www.transparentpng.com/thumb/telephone/yellow-old-phone-png-transparent-images--32.png" alt="yellow old phone png transparent images @transparentpng.com" /></Grid> */}
-      {/* <Grid item paddingLeft='2vh'><h1>9398113939</h1></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><EngineeringIcon sx={{ fontSize: 80 }} color="action" /></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h3>Expertise In GearLess</h3></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>Through our expertise in engineering. We have developed a high-quality gearless home elevator. The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome elevator.</Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><EngineeringIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h2>Expertise In GearLess</h2></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'start', color: '#00264d' }}>
+        Through our expertise in engineering. We have developed a high-quality gearless home elevator. 
+        The result is a high-performance addition to your home that you can hardly hear, even when you put your ear 
+        right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome 
+        elevator.</Grid>
     </Grid>
   </Box>
 }
 
 function EnergyEffecient() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '21%', fontSize: '0.8rem' }}>
     <Grid>
-      {/* <Grid item paddingLeft='4vh'>
-        <h2> Contact details</h2>
-      </Grid> */}
-      {/* <Grid item><img height='100vh' src="https://www.transparentpng.com/thumb/telephone/yellow-old-phone-png-transparent-images--32.png" alt="yellow old phone png transparent images @transparentpng.com" /></Grid> */}
-      {/* <Grid item paddingLeft='2vh'><h1>9398113939</h1></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: 80 }} color="action" /></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h3>Energy Effecient</h3></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>Through our expertise in engineering. We have developed a high-quality gearless home elevator. The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome elevator.</Grid>
-    </Grid>
-  </Box>
-}
-
-function PrecisePositioningTech() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
-    <Grid>
-      {/* <Grid item paddingLeft='4vh'>
-        <h2> Contact details</h2>
-      </Grid> */}
-      {/* <Grid item><img height='100vh' src="https://www.transparentpng.com/thumb/telephone/yellow-old-phone-png-transparent-images--32.png" alt="yellow old phone png transparent images @transparentpng.com" /></Grid> */}
-      {/* <Grid item paddingLeft='2vh'><h1>9398113939</h1></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: 80 }} color="action" /></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h3>Expertise In GearLess</h3></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>Through our expertise in engineering. We have developed a high-quality gearless home elevator. The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome elevator.</Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h2>Energy Efficient</h2></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'start', color: '#00264d' }}>In today's world, energy efficiency is paramount, and Brio Elevators stands at the forefront of Evolutionizing vertical Transportation by prioritizing sustainability. Our Elevators are Engineered to not only elevate people but also Elevate energy efficiency to new heights.</Grid>
     </Grid>
   </Box>
 }
 
 function ProgressiveSafetyGear() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '21%', fontSize: '0.8rem' }}>
     <Grid>
-      {/* <Grid item paddingLeft='4vh'>
-        <h2> Contact details</h2>
-      </Grid> */}
-      {/* <Grid item><img height='100vh' src="https://www.transparentpng.com/thumb/telephone/yellow-old-phone-png-transparent-images--32.png" alt="yellow old phone png transparent images @transparentpng.com" /></Grid> */}
-      {/* <Grid item paddingLeft='2vh'><h1>9398113939</h1></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: 80 }} color="action" /></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h3>Progressive Safety Gear</h3></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>Through our expertise in engineering. We have developed a high-quality gearless home elevator. The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome elevator.</Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h2>Reliable solutions</h2></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'start', color: '#00264d' }}>In case of a power failure, our home elevators will continue to work from a battery, allowing the user to reach the ground floor safely. It is also possible to connect a Fire Alarm System to the main Electronic Board.</Grid>
     </Grid>
   </Box>
 }
 
 function AutomatedResuceDevice() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '23%', fontSize: '0.8rem', padding: '1%' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', width: '21%', fontSize: '0.8rem' }}>
     <Grid>
-      {/* <Grid item paddingLeft='4vh'>
-      <h2> Contact details</h2>
-    </Grid> */}
-      {/* <Grid item><img height='100vh' src="https://www.transparentpng.com/thumb/telephone/yellow-old-phone-png-transparent-images--32.png" alt="yellow old phone png transparent images @transparentpng.com" /></Grid> */}
-      {/* <Grid item paddingLeft='2vh'><h1>9398113939</h1></Grid> */}
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><PsychologyIcon sx={{ fontSize: 80 }} color="action" /></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h3>Automated Resuce Device</h3></Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>Through our expertise in engineering. We have developed a high-quality gearless home elevator. The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome elevator.</Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><PsychologyIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}><h2>Intelligent control systems</h2></Grid>
+      <Grid item sx={{ display: 'flex', justifyContent: 'start', color: '#00264d' }}>Our Elevators are equipped with Intelligent Control Systems that adapt to usage patterns. They optimize elevator operation by predicting passenger demand, reducing unnecessary stops, and minimizing idle time, all while conserving energy.</Grid>
     </Grid>
   </Box>
 }
 
 function ProductSpecsContainer(props) {
   return (
-    <Grid sx={{ display: 'flex', height: '55vh', justifyContent: 'space-around', border: '1px solid white', borderRadius: '1vh', backgroundColor: 'white', padding:'1%' }}>
+    <Grid sx={{ backgroundColor: '#faf6ed', display: 'flex', height: '45vh', width: 'auto', justifyContent: 'space-around', border: '1px solid white', padding: '0 2rem 0 2rem' }}>
       <Grid item sx={{ display: 'contents' }}>
         {ExpertiseInGearLess()}
       </Grid>

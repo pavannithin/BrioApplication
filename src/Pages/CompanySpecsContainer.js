@@ -47,9 +47,8 @@ function requestCallBack() {
 
 function CompanySpecsContainer(props) {
   return (
-    <Box sx={{ height: '30vh', border: '1px solid white', borderRadius: '1vh', backgroundColor: 'white', padding: '5%' }}>
-
-      {/* <Grid item> */}
+    <Box sx={{ height: '15vh', border: '1px solid white', borderRadius: '1vh', backgroundColor: 'white', padding: '5rem' }}>
+      
         <Grid sx={{ display: 'flex', justifyContent: 'space-around' }}>
           <Grid item sx={{ display: 'contents' }}>
             {afterSalesSupport()}
@@ -70,8 +69,6 @@ function CompanySpecsContainer(props) {
             {requestCallBack()}
           </Grid>
         </Grid>
-
-      {/* </Grid> */}
 
     </Box>
   );
