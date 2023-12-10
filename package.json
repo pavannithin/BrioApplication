@@ -14,7 +14,6 @@
     "browserslist": "^4.6.3",
     "install": "^0.13.0",
     "mdb-react-ui-kit": "^7.0.0",
-    "node-sass": "^9.0.0",
     "npm": "^10.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,12 +22,13 @@
     "react-scripts": "^3.0.1",
     "react-swipeable-views": "^0.14.0",
     "react-swipeable-views-utils": "^0.14.0",
+    "sass": "^1.55.0",
     "sass-loader": "^13.3.2",
     "styled-components": "^6.1.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "node-sass": "npm:sass@^1.55.0"
   },
   "devDependencies": {
-    "node-sass": "^6.0.0",
     "sass-loader": "^12.0.0"
   },
   "scripts": {
