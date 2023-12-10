@@ -10,8 +10,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.2",
+    "browserslist": "^4.6.3",
     "install": "^0.13.0",
     "mdb-react-ui-kit": "^7.0.0",
+    "node-sass": "^9.0.0",
     "npm": "^10.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,6 +26,10 @@
     "sass-loader": "^13.3.2",
     "styled-components": "^6.1.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "sass-loader": "^12.0.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
@@ -36,19 +43,10 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "sass": "^1.69.5"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
