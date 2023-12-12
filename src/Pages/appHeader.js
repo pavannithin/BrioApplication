@@ -173,12 +173,12 @@ export default function AppHeader(props) {
                     />
                   </Grid>
                   <Grid item>
-                    <Typography sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
+                     <Typography sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
                       BRIO, ELEVATES YOUR EXPECTATIONS
-                    </Typography>
-                    {/* <Typography className='shineText' sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
+                    </Typography> 
+                    {/*<Typography className='shineText' sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
                       BRIO, ELEVATES YOUR EXPECTATIONS
-                    </Typography> */}
+                    </Typography>*/}
                   </Grid>
                 </Grid>
               </Grid>
