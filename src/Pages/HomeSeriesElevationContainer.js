@@ -208,7 +208,7 @@ function HomeSeriesElevationContainer(props) {
     return <Grid item sx={{ width: '65%', height: 'auto', padding: '5rem 10rem 0vh 0rem' }}>
       <Grid>
         <Grid item>
-          <SwapVerticalCircleOutlinedIcon sx={{ color: 'crimson', fontSize: '4rem' }} />
+          <SwapVerticalCircleOutlinedIcon sx={{ color: GoldColor, fontSize: '4rem' }} />
           {/* <Typography variant='h3' sx={{ padding: '1rem 3rem 1rem 3rem' }}> Home lifts at their best </Typography> */}
           <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
             <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
@@ -368,7 +368,7 @@ function HomeSeriesElevationContainer(props) {
             <Grid item>
               {/* <Button variant="contained" sx={{ boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
                 <Typography variant='button'>Download Broucher</Typography></Button> */}
-              <Button variant="contained" sx={{ backgroundColor: 'crimson', width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
+              <Button variant="contained" sx={{ backgroundColor: GoldColor, width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
                 Download Broucher
               </Button>
             </Grid>

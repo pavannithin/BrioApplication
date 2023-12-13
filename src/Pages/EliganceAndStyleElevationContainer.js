@@ -119,7 +119,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: 'crimson', fontWeight: 'bold' }}
+                  sx={{ color: GoldColor, fontWeight: 'bold' }}
                 >
                   
                   <span> Classic </span>{" "}
@@ -146,7 +146,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: 'crimson', fontWeight: 'bold' }}
+                  sx={{ color: GoldColor, fontWeight: 'bold' }}
                 >
                   
                   <span> Pro-Cabin </span>{" "}
@@ -173,7 +173,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: 'crimson', fontWeight: 'bold' }}
+                  sx={{ color: GoldColor, fontWeight: 'bold' }}
                 >
                   
                   <span> Glass Cabin </span>{" "}
@@ -199,7 +199,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: 'crimson', fontWeight: 'bold' }}
+                  sx={{ color: GoldColor, fontWeight: 'bold' }}
                 >
                   
                   <span> Elegance </span>{" "}

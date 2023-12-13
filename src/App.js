@@ -21,7 +21,8 @@ import { Box } from '@mui/material';
 const theme = createTheme({
   typography: {
     allVariants: {
-      fontFamily: 'Didact Gothic',
+      // fontFamily: 'Didact Gothic',
+      fontFamily: 'poppins'
       // fontSize: '48px'
       // fontFamily: 'Elena, serif'
       // fontFamily: 'Neuehaasdisplay mediu,sans-serif'

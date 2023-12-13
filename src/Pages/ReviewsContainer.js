@@ -95,7 +95,7 @@ function Item(props) {
             <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
               <Avatar src="/broken-image.jpg" />
             </Grid>
-            <Grid item sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'crimson' }}>
+            <Grid item sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: GoldColor }}>
               <Typography variant='h6' sx={{fontStyle: 'italic'}}> - {props.item.name}</Typography>
             </Grid>
           </Grid>

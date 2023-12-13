@@ -9,17 +9,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { HeaderColor, GoldColor, emailId } from "./Constants";
 
 function BigBannerElevationContainer(props) {
   const theme = useTheme();
 
   return (
     <Grid sx={{ height: '58vh', paddingTop: '6rem', paddingBottom: '0rem', color: '#104c8a' }}>
-      <Grid item sx={{ height: '48vh' }}>
+      <Grid item sx={{ height: '35vh' }}>
         <Card>
           <Box sx={{ position: 'relative' }}>
             <CardMedia
-              sx={{ height: '47vh',  backgroundColor: '#000000c2' }}
+              sx={{ height: '35vh',  backgroundColor: '#000000c2' }}
               image={homeSeriesmainImage}
             />
             <Box
@@ -31,7 +32,7 @@ function BigBannerElevationContainer(props) {
                 width: '98%',
                 height: '85%',
                 color: 'white',
-                padding: '2% 1% 2% 1%',
+                padding: '2% 1% 1% 1%',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -47,7 +48,7 @@ function BigBannerElevationContainer(props) {
               {/* <Typography variant='h2' sx={{fontFamily: 'Allerta Stencil'}}>TO BE THE CLIENT’S NO 1 CHOICE</Typography> */}
               <Typography variant='h4' sx={{fontFamily: 'Allerta Stencil',
               WebkitTextStrokeWidth: '0.8px',
-                WebkitTextStrokeColor: 'crimson'}}> WINNING HEARTS ONE LIFT AT A TIME </Typography>
+                WebkitTextStrokeColor: ''}}> WINNING HEARTS ONE LIFT AT A TIME </Typography>
             </Box>
           </Box>
         </Card>

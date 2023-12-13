@@ -130,7 +130,7 @@ export default function AppHeader(props) {
                     <Typography variant="h6" sx={{fontWeight: 'bold'}}>Products</Typography>
                   </Grid>
                   <Grid item sx={onHeaderItemsHover}>
-                    <Grid sx={{ display: "flex",  color: 'crimson'  }}>
+                    <Grid sx={{ display: "flex",  color: GoldColor  }}>
                       <Grid item>
                         <CallIcon
                           sx={{ fontSize: 30, paddingRight: "0.5rem" }}
@@ -247,7 +247,7 @@ export default function AppHeader(props) {
                   position: "fixed",
                   bottom: 280,
                   right: -35,
-                  backgroundColor: 'crimson',
+                  backgroundColor: GoldColor,
                   height: "2.5rem",
                   width: "7rem",
                   transform: 'rotate(90deg)',

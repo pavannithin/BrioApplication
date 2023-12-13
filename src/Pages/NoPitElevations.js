@@ -165,7 +165,7 @@ function NoPitElevations(props) {
           // fontSize: '1.5rem', 
           borderRadius: '1.5rem',
            backgroundColor: 'white', 
-           color: 'crimson' }}>
+           color: GoldColor }}>
             <Typography variant='button' sx={{fontWeight: 'bold'}}>Get Quotation</Typography></Button>
         </Grid>
       </Grid>
@@ -245,7 +245,7 @@ function NoPitElevations(props) {
           >
             <Box>
               <Box>
-                <Typography variant='h5' sx={{color: 'crimson'}}>Brio's NEW GENERATION lifts</Typography>
+                <Typography variant='h5' sx={{color: GoldColor}}>Brio's NEW GENERATION lifts</Typography>
               </Box>
             </Box>
 

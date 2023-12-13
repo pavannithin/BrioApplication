@@ -169,7 +169,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                           onRequestClose={handlePopoverClose}
                         >
                           <Box sx={{ display: 'flex', justifyContent: 'center', padding: '1rem' }}>
-                            <Typography variant='h5' sx={{ fontWeight: 'bold',  color: 'crimson'  }}> Technical Specifications
+                            <Typography variant='h5' sx={{ fontWeight: 'bold',  color: GoldColor  }}> Technical Specifications
                             </Typography>
                           </Box>
                           <Box p='1rem' sx={{ maxWidth: '60vh' }}><Typography variant='body2'>Elevate your expectations with our cutting-edge Belt technology and rivet-less shaft,
@@ -220,7 +220,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                           disableRestoreFocus
 
                         >
-                          <Box sx={{ display: 'flex', justifyContent: 'center', padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold', color: 'crimson' }}> Technical Specifications</Typography></Box>
+                          <Box sx={{ display: 'flex', justifyContent: 'center', padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold', color: GoldColor }}> Technical Specifications</Typography></Box>
                           <Box p='1rem' sx={{ maxWidth: '60vh' }}><Typography variant='body2'>BRIO Gearless unique traction lift solution that complies with lifts Directive
                             2014/33/EU. Installation can be customized to any architectural need and design,
                             even special and challenging projects. It is an elegant and, above all, truly convenient solution,
@@ -267,7 +267,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                           onClose={handlePopoverClose}
                           disableRestoreFocus
                         >
-                          <Box sx={{ display: 'flex', justifyContent: 'center', color: HeaderColor, padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold',  color: 'crimson'  }}> Technical Specifications</Typography></Box>
+                          <Box sx={{ display: 'flex', justifyContent: 'center', color: HeaderColor, padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold',  color: GoldColor  }}> Technical Specifications</Typography></Box>
                           <Box p='1rem' sx={{ maxWidth: '60vh' }}>
                             <Typography variant='body1'> Indulge in opulence with our Brio
                               Imported Hydraulic Technology, a versatile lift designed for an array of applications.
@@ -315,7 +315,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                           onClose={handlePopoverClose}
                           disableRestoreFocus
                         >
-                          <Box sx={{ display: 'flex', justifyContent: 'center', color: HeaderColor, padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold', color: 'crimson'  }}> Technical Specifications</Typography></Box>
+                          <Box sx={{ display: 'flex', justifyContent: 'center', color: HeaderColor, padding: '1rem' }}><Typography variant='h5' sx={{ fontWeight: 'bold', color: GoldColor  }}> Technical Specifications</Typography></Box>
                           <Box p='1rem' sx={{ maxWidth: '60vh' }}>
                             <Typography variant='body1'> Our extensive product lineup ensures that we provide an accessibility solution tailored to
                               every home. Just as each unit is uniquely crafted to user specifications, our diverse product range is meticulously designed
@@ -348,7 +348,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
           padding: '0.9rem',
           fontSize: '1rem',
           borderRadius: '1.5rem',
-          backgroundColor: 'crimson'
+          backgroundColor: GoldColor
         }}
         onClick={onDownload}>
         Download Broucher

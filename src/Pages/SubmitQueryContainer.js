@@ -47,7 +47,7 @@ function SubmitQueryContainer(props) {
             }}
           >
             <Box sx={{ width: '65%', height: '92%' }}>
-              <Typography variant='h4' sx={{color: 'crimson'}}>
+              <Typography variant='h4' sx={{color: GoldColor}}>
                 Contact us for further information
               </Typography>
               <Box sx={{ padding: '3rem 1rem 1rem 3rem' }}>
@@ -87,7 +87,7 @@ function SubmitQueryContainer(props) {
 
                 <Box sx={{ padding: '1rem' }} />
                 {/* <input name='Submit' type='submit' style={{ height: '6vh', width: '36vh', fontSize: '1.4rem' }} /> */}
-                <Button variant="contained" sx={{ width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.5rem', fontSize: '1rem', borderRadius: '1.5rem', backgroundColor: 'crimson' }}>
+                <Button variant="contained" sx={{ width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.5rem', fontSize: '1rem', borderRadius: '1.5rem', backgroundColor: GoldColor }}>
                   Submit
                 </Button>
               </Box>
@@ -116,7 +116,7 @@ function SubmitQueryContainer(props) {
                       <TableRow>
                         <>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
-                            <PlaceIcon sx={{ fontSize: 30, color: 'crimson' }} />
+                            <PlaceIcon sx={{ fontSize: 30, color: GoldColor }} />
                           </TableCell>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
                             <Typography variant='h5' color='white'>Hyderabad</Typography>
@@ -125,7 +125,7 @@ function SubmitQueryContainer(props) {
 
                         <>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
-                            <PlaceIcon sx={{ fontSize: 30, color: 'crimson'  }} />
+                            <PlaceIcon sx={{ fontSize: 30, color: GoldColor  }} />
                           </TableCell>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
                             <Typography variant='h5' color='white'>Vijayawada</Typography>
@@ -134,7 +134,7 @@ function SubmitQueryContainer(props) {
 
                         <>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
-                            <PlaceIcon sx={{ fontSize: 30, color: 'crimson'  }} />
+                            <PlaceIcon sx={{ fontSize: 30, color: GoldColor  }} />
                           </TableCell>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
                             <Typography variant='h5' color='white'>Bangalore</Typography>
@@ -143,7 +143,7 @@ function SubmitQueryContainer(props) {
 
                         <>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
-                            <PlaceIcon sx={{ fontSize: 30,color: 'crimson'  }} />
+                            <PlaceIcon sx={{ fontSize: 30,color: GoldColor  }} />
                           </TableCell>
                           <TableCell sx={{ border: 'unset', padding: '2px' }}>
                             <Typography variant='h5' color='white'>Chennai</Typography>
