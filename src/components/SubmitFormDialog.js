@@ -29,7 +29,9 @@ export default function SubmitFormDialog(props) {
         
         <Divider variant='fullWidth' />
       </DialogTitle>
-      <DialogContent>
+
+      {
+        props.isDeskTopDevice &&  <DialogContent>
         <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '4% 2% 4% 2%' }}>
           <Grid item>
             <Grid sx={{ display: 'flex', flexDirection: 'row', columnGap: '2%' }}>
@@ -100,6 +102,125 @@ export default function SubmitFormDialog(props) {
           </Grid>
         </Grid>
       </DialogContent>
+      }
+     
+     {
+        !props.isDeskTopDevice &&  <DialogContent>
+        <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '4% 2% 4% 2%' }}>
+
+          {/* <Grid item>
+            <Grid sx={{ display: 'flex', flexDirection: 'row', columnGap: '2%' }}> */}
+              <Grid item>
+                <input
+                  type='text'
+                  placeholder='Name'
+                  style={{ height: '100%', 
+                  width: '90%', 
+                  fontSize: '1.2rem', 
+                  padding: '0.6rem',
+                   borderRadius: '0.5rem', 
+                   borderColor: GoldColor  }}
+                />
+              </Grid>
+              <Grid item sx={{ height: '1rem' }} />
+              <Grid item>
+                <input
+                  type='number'
+                  placeholder='Phone Number'
+                  style={{ height: '100%', 
+                  width: '90%', 
+                  fontSize: '1.2rem', 
+                  padding: '0.6rem',
+                   borderRadius: '0.5rem', 
+                   borderColor: GoldColor  }}
+                />
+              </Grid>
+            {/* </Grid> */}
+
+          {/* </Grid> */}
+
+          <Grid item sx={{ height: '1rem' }} />
+          {/* <Grid item>
+            <Grid sx={{ display: 'flex', flexDirection: 'row', columnGap: '2%' }}> */}
+              <Grid item>
+                <input
+                  type='email'
+                  placeholder='Email'
+                  style={{ 
+                    height: '100%', 
+                    width: '90%', 
+                    fontSize: '1.2rem', 
+                    padding: '0.6rem',
+                     borderRadius: '0.5rem', 
+                     borderColor: GoldColor  }}
+                />
+              </Grid>
+              <Grid item sx={{ height: '1rem' }} />
+              <Grid item>
+                <input
+                  type='number'
+                  placeholder='No.of Floors'
+                  style={{ 
+                    height: '100%', 
+                  width: '90%', 
+                  fontSize: '1.2rem', 
+                  padding: '0.6rem',
+                   borderRadius: '0.5rem', 
+                   borderColor: GoldColor 
+                   }}
+                />
+              </Grid>
+            {/* </Grid> */}
+
+            <Grid item sx={{ height: '1rem' }} />
+            <Grid item>
+                <input
+                  type='text'
+                  placeholder='Site Location'
+                  style={{ 
+                    height: '100%', 
+                    width: '90%', 
+                    fontSize: '1.2rem', 
+                    padding: '0.6rem',
+                     borderRadius: '0.5rem', 
+                     borderColor: GoldColor 
+                  }}
+                />
+              </Grid>
+
+          {/* </Grid> */}
+          {/* <Grid item sx={{ height: '1rem' }} />
+          <Grid item>
+            <Grid sx={{ display: 'flex', flexDirection: 'row', columnGap: '2%' }}>
+              <Grid item>
+                <input
+                  type='text'
+                  placeholder='Construction Type'
+                  style={{ height: '100%', width: '90%', fontSize: '1.2rem', padding: '1.5%', borderRadius: '0.5rem', borderColor: GoldColor  }}
+                />
+              </Grid>
+              <Grid item>
+                <input
+                  type='text'
+                  placeholder='Site Location'
+                  style={{ height: '100%', width: '90%', fontSize: '1.2rem', padding: '1.5%', borderRadius: '0.5rem', borderColor: GoldColor  }}
+                />
+              </Grid>
+            </Grid>
+          </Grid> */}
+
+          <Grid item sx={{ height: '2rem' }} />
+          {/* <Grid item>
+            <textarea name="message" placeholder='Enter your query' style={{ fontSize: '1rem', padding: '1.5%', height: '20%', width: '95%', borderRadius: '0.5rem', borderColor: GoldColor  }} />
+          </Grid> */}
+          <Grid item sx={{ height: '25px' }} />
+          <Grid item sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <Button variant="contained" onClick={handleClose} sx={{ width: '100%' }}>
+              <Typography variant='body1'>{buttonText}</Typography></Button>
+          </Grid>
+        </Grid>
+      </DialogContent>
+      }
     </Dialog>
   );
 }

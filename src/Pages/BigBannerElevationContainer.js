@@ -30,9 +30,9 @@ function BigBannerElevationContainer(props) {
                 top: 0,
                 bottom: 0,
                 width: '98%',
-                height: '85%',
+                height: '100%',
                 color: 'white',
-                padding: '2% 1% 1% 1%',
+                padding: '0% 1% 1% 1%',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -45,10 +45,20 @@ function BigBannerElevationContainer(props) {
               <h1>
               TO BE THE CLIENT’S NO 1 CHOICE
               </h1>
-              {/* <Typography variant='h2' sx={{fontFamily: 'Allerta Stencil'}}>TO BE THE CLIENT’S NO 1 CHOICE</Typography> */}
-              <Typography variant='h4' sx={{fontFamily: 'Allerta Stencil',
+             
+             {
+              props.isDeskTopDevice && <Typography variant='h4' sx={{fontFamily: 'Allerta Stencil',
               WebkitTextStrokeWidth: '0.8px',
-                WebkitTextStrokeColor: ''}}> WINNING HEARTS ONE LIFT AT A TIME </Typography>
+                WebkitTextStrokeColor: '', textAlign: 'center'}}> WINNING HEARTS ONE LIFT AT A TIME </Typography>
+             }
+             
+             {
+              !props.isDeskTopDevice && <Typography variant='h6' sx={{fontFamily: 'Allerta Stencil',
+              WebkitTextStrokeWidth: '0.8px',
+                WebkitTextStrokeColor: '', textAlign: 'center'}}> WINNING HEARTS ONE LIFT AT A TIME </Typography>
+           
+             }
+
             </Box>
           </Box>
         </Card>

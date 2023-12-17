@@ -143,8 +143,14 @@ function ReviewsContainer(props) {
           </Grid>
       </Grid>
       <Grid item>
-        <Grid sx={{ height: '28vh', paddingTop: '1vh', paddingLeft: '25vh', paddingRight: '25vh' }}>
-          <Grid item sx={{ height: '28vh', padding: '0.5vh' }}>
+        <Grid sx={{ 
+          height: '28vh', 
+          paddingTop: '1vh', 
+          paddingLeft: '25vh', 
+          paddingRight: '25vh' }}>
+          <Grid item sx={{ 
+            height: '28vh', 
+            padding: '0.5vh' }}>
             <Carousel
               autoPlay
               interval={2000}

@@ -38,7 +38,7 @@ function HomeSeriesElevationContainer(props) {
   `;
 
   function forMobile() {
-    return <Box paddingTop='12rem'>
+    return <Box sx= {{paddingTop: { xs: "4rem", sm: "4rem", md: "12rem" }}}>
       <Grid container sx={{ width: '100%', dispaly: 'flex', justifyContent: 'space-between', textAlign: 'center', color: HeaderColor }}>
 
         <Grid item sx={{ width: '100%', height: 'auto' }}>
@@ -47,7 +47,10 @@ function HomeSeriesElevationContainer(props) {
               <SwapVerticalCircleOutlinedIcon sx={{ color: GoldColor, fontSize: '4rem' }} />
               <Typography variant='h4' sx={{ padding: '0rem 2rem 1rem 2rem', color: GoldColor }}> Home lifts at their best </Typography>
               <Typography variant='h6' sx={{ padding: '0rem 2rem 1rem 2rem'}}>
-                <Box sx={{color: GoldColor}}>Providing Lift products right from small home lifts to large lifts for commercial buildings and public utility</Box>
+                <Box sx={{color: HeaderColor}}>
+                Providing Lift products right from small <span style={{fontWeight: 'bold'}}>home lifts</span> to large lifts for <span style={{fontWeight: 'bold'}}>commercial buildings</span> and public utility
+                  {/* Providing Lift products right from small home lifts to large lifts for commercial buildings and public utility */}
+                  </Box>
               </Typography>
             </Grid>
             {/* image 1 */}
@@ -208,7 +211,7 @@ function HomeSeriesElevationContainer(props) {
     return <Grid item sx={{ width: '65%', height: 'auto', padding: '5rem 10rem 0vh 0rem' }}>
       <Grid>
         <Grid item>
-          <SwapVerticalCircleOutlinedIcon sx={{ color: GoldColor, fontSize: '4rem' }} />
+          <SwapVerticalCircleOutlinedIcon sx={{ color: 'crimson', fontSize: '4rem' }} />
           {/* <Typography variant='h3' sx={{ padding: '1rem 3rem 1rem 3rem' }}> Home lifts at their best </Typography> */}
           <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
             <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
@@ -368,7 +371,7 @@ function HomeSeriesElevationContainer(props) {
             <Grid item>
               {/* <Button variant="contained" sx={{ boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
                 <Typography variant='button'>Download Broucher</Typography></Button> */}
-              <Button variant="contained" sx={{ backgroundColor: GoldColor, width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
+              <Button variant="contained" sx={{ backgroundColor: 'crimson', width: '50%', boxShadow: '10px 10px 5px #3930306e', padding: '0.9rem', fontSize: '1rem', borderRadius: '1.5rem' }} onClick={onCLick}>
                 Download Broucher
               </Button>
             </Grid>
@@ -444,7 +447,7 @@ function HomeSeriesElevationContainer(props) {
       <Card>
         <Box sx={{ position: 'relative' }}>
           <CardMedia
-            sx={{ height: '190vh' }}
+            sx={{ height: '170vh' }}
             image={homeSeriesmainImage}
           />
           <Box

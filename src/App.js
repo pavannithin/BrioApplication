@@ -98,18 +98,16 @@ useEffect(() => {
         <AppHeader isDeskTopDevice={isDeskTopDevice} />
         <HomeSeriesElevationContainer isDeskTopDevice={isDeskTopDevice} />
         <MinPageAboutUsContainer isDeskTopDevice={isDeskTopDevice} />
-        
-        <div id="content">
         <ProductsElevationContainer isDeskTopDevice={isDeskTopDevice} />
-        </div>
-        <NoPitElevationsContainer isDeskTopDevice={isDeskTopDevice} />
+
+       <NoPitElevationsContainer isDeskTopDevice={isDeskTopDevice} />
         <VideoBannerContainer isDeskTopDevice={isDeskTopDevice} />
-        {/* <ProductSpecsContainer isDeskTopDevice={isDeskTopDevice}/> */}
-        <Bigbanner isDeskTopDevice={isDeskTopDevice} />
+  
+         <Bigbanner isDeskTopDevice={isDeskTopDevice} />
         <EliganceAndStyle isDeskTopDevice={isDeskTopDevice} />
         <ReviewContainer isDeskTopDevice={isDeskTopDevice} />
-        <SubmitQueryContainer isDeskTopDevice={isDeskTopDevice} />
-        <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice} />
+        {/* <SubmitQueryContainer isDeskTopDevice={isDeskTopDevice} /> */}
+        {/* <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice} /> */}
       </>
 
     </ThemeProvider>

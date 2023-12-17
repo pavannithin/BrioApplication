@@ -28,7 +28,7 @@ const styles = {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "97vh",
-    width: "100%",
+    // width: "100%",
   },
 };
 
@@ -68,7 +68,7 @@ export default function AppHeader(props) {
     display: "flex",
     padding: "1% 3% 1% 3%",
     justifyContent: "space-between",
-    maxHeight: { xs: "4%", sm: "8%", md: "12%" },
+    maxHeight: { xs: "4%", sm: "8%", md: "11%" },
     backgroundColor: "#faf6ed",
     alignItems: "center",
     position: "fixed",
@@ -101,13 +101,15 @@ export default function AppHeader(props) {
         open={openDialog}
         handleClose={onCloseFreeSiteCheckButtonCLick}
         buttonText="Get Free Site Feasibility Check"
+        isDeskTopDevice={props.isDeskTopDevice}
       />
       <Box ref={myRef}>
         <Paper style={styles.paperContainer}>
           <Grid sx={{ height: "95vh" }}>
 
             {/* Header */}
-            <Grid sx={headerStyles}>
+            {
+              props.isDeskTopDevice && <Grid sx={headerStyles}>
               <Grid item>
                 <img
                   src={companyLogo}
@@ -124,13 +126,13 @@ export default function AppHeader(props) {
                   }}
                 >
                   <Grid item sx={onHeaderItemsHover} onClick={executeScroll}>
-                    <Typography variant="h6" sx={{fontWeight: 'bold'}}>Home</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Home</Typography>
                   </Grid>
                   <Grid item sx={onHeaderItemsHover} onClick={() => window.scrollTo({ top: 2668, behavior: "smooth" })}>
-                    <Typography variant="h6" sx={{fontWeight: 'bold'}}>Products</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Products</Typography>
                   </Grid>
                   <Grid item sx={onHeaderItemsHover}>
-                    <Grid sx={{ display: "flex",  color: GoldColor  }}>
+                    <Grid sx={{ display: "flex", color: GoldColor }}>
                       <Grid item>
                         <CallIcon
                           sx={{ fontSize: 30, paddingRight: "0.5rem" }}
@@ -146,6 +148,8 @@ export default function AppHeader(props) {
                 </Grid>
               </Grid>
             </Grid>
+            }
+            
 
             {/*Main Heading */}
             <Grid
@@ -161,41 +165,48 @@ export default function AppHeader(props) {
               <Grid
                 item
                 sx={{
-                  backgroundColor: "#3930306e",
-                  padding: "1.4% 12% 1.4% 12%",
-                  boxShadow: "1px 1px 25px",
+                  padding: "1.4rem"
                 }}
               >
-                <Grid sx={{ display: "flex", justifyContent: "center" }}>
-                  <Grid item sx={{ paddingRight: "0.8vh" }}>
-                    <FormatQuoteIcon
-                      sx={{ transform: "rotate(180deg)", color: GoldColor }}
-                    />
-                  </Grid>
-                  <Grid item>
-                     <Typography sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
+                <Grid sx={{ display: "flex", justifyContent: "center", textAlign: 'center' }}>
+                  {/* <Grid item sx={{ paddingRight: "0.8rem" }}>
+                    {/* <FormatQuoteIcon
+                      sx={{ transform: "rotate(180deg)", color: GoldColor, paddingRight: "0.8rem" }}
+                    /> */}
+                  {/* </Grid> */}
+                  {
+                    props.isDeskTopDevice && <Grid item>
+                    <Typography variant="h2" sx={{ fontFamily: 'Fredericka the Great' }}>
                       BRIO, ELEVATES YOUR EXPECTATIONS
-                    </Typography> 
-                    {/*<Typography className='shineText' sx={{ fontFamily: 'Fredericka the Great', fontSize: '2.7rem' }}>
-                      BRIO, ELEVATES YOUR EXPECTATIONS
-                    </Typography>*/}
+                    </Typography>
                   </Grid>
+                  }
+                  {
+                    !props.isDeskTopDevice && <Grid item>
+                    <Typography variant="h4" sx={{ fontFamily: 'Fredericka the Great' }}>
+                      BRIO, ELEVATES YOUR EXPECTATIONS
+                    </Typography>
+                  </Grid>
+                  }
                 </Grid>
               </Grid>
-              <Grid item padding="2%">
+
+              <Grid item padding="1rem">
                 <Button
                   sx={{ boxShadow: "10px 10px 5px #3930306e" }}
                   variant="contained"
                   onClick={onFreeSiteCheckButtonCLick}
                 >
                   <Typography variant="body1">
-                    Get Free Site Feasibility Check
+                    Get Free Site Feasibility <br />Check
                   </Typography>
                 </Button>
               </Grid>
             </Grid>
 
             {/* Text with image */}
+            {
+               props.isDeskTopDevice && 
             <Grid sx={{
               display: 'flex',
               justifyContent: 'end',
@@ -203,25 +214,33 @@ export default function AppHeader(props) {
               position: 'absolute',
               bottom: '0',
               right: '0',
-              paddingRight: '2%',
-              width: { xs: '100%', sm: '80%', md: '55%' },
+              paddingRight: '2rem',
+              width: { xs: '500px', sm: '500px', md: '500px' }
             }}>
-              <Grid item sx={{ padding: '4% 3% 4% 7%', color: 'black' }}>
-                <Box sx={{ border: '1.2px solid #0000009c', padding: '3px 16px 3px 16px', background: '#f0f1f27a', boxShadow: '10px 10px 5px #3930306e' }}><Grid>
-                  <Grid item>
-                    <Typography> Certified Home Elevators</Typography>
+              <Grid item sx={{ padding: '4rem 1rem 3rem 0rem', color: 'black' }}>
+                <Box sx={{
+                  border: '1.2px solid #0000009c',
+                  padding: '0.3rem',
+                  background: '#f0f1f27a',
+                  boxShadow: '10px 10px 5px #3930306e'
+                }}>
+                  <Grid>
+                    <Grid item>
+                      <Typography variant="body1"> Certified Home Elevators</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="body1"> <b>at affortable cost from ITALY</b></Typography>
+                    </Grid>
                   </Grid>
-                  <Grid item>
-                    <Typography> <b>at affortable cost from ITALY</b></Typography>
-                  </Grid>
-                </Grid>
                 </Box>
               </Grid>
               <Grid item>
-                <Box><img style={{ width: '76px' }} src={tuv} /></Box>
+                <Box sx={{ width: { xs: '55px', sm: '55px', md: '76px' }, paddingTop: '1rem' }}><img style={{ width: '100%' }} src={tuv} /></Box>
               </Grid>
             </Grid>
+            }
           </Grid>
+
           {showFloatButton() && (
             <Fab
               sx={{
@@ -262,32 +281,54 @@ export default function AppHeader(props) {
           }
 
         </Paper>
-        <Box
-          sx={{
-            height: "16vh",
-            backgroundColor: "#f4f4f4",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
-          <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Grid item sx={{ padding: "1rem" }}>
-              <Grid sx={{ display: 'flex', columnGap: '1rem', width: '100%', justifyContent: 'center' }}>
-                <Grid item sx={{ width: '10%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
-                  <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' color='#104c8a' />
-                </Grid>
-                <Grid item>
-                  <Typography variant='h6' sx={{ paddingTop: '0.5rem', color: GoldColor, fontWeight: 'bold' }}>THE FIRST INDO - ITALIAN ELEVATOR COMPANY</Typography>
-                </Grid>
-                <Grid item sx={{ width: '10%', alignContent: 'center' }}>
-                  <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
+
+        {/* bottom strip */}
+       <Box
+            sx={{
+              height: "16vh",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
+              <Grid item sx={{ padding: "1rem" }}>
+                <Grid sx={{ display: 'flex', columnGap: '1rem', width: '100%', justifyContent: 'center' }}>
+                  <Grid item sx={{ width: '10%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+                    <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'}
+                      height='90%'
+                      width='90%'
+                      color='#104c8a' />
+                  </Grid>
+                  <Grid item>
+                   { props.isDeskTopDevice && <Typography variant='h5'
+                      sx={{
+                        paddingTop: '1.6rem',
+                        color: GoldColor,
+                        fontWeight: 'bold',
+                        fontFamily: 'Shrikhand'
+                      }}>THE FIRST INDO - ITALIAN ELEVATOR COMPANY</Typography>
+                    }
+                    { !props.isDeskTopDevice && <Typography variant='subtitle1'
+                      sx={{
+                        color: GoldColor,
+                        fontWeight: 'bold',
+                        fontFamily: 'Shrikhand'
+                      }}>THE FIRST INDO - ITALIAN ELEVATOR COMPANY</Typography>
+                    }
+                    </Grid>
+                  <Grid item sx={{ width: '10%', alignContent: 'center' }}>
+                    <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'}
+                      height='90%'
+                      width='90%' />
+                  </Grid>
                 </Grid>
               </Grid>
             </Grid>
-          </Grid>
-        </Box>
+       </Box>
+
       </Box>
     </>
   );

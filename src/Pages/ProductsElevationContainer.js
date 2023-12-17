@@ -113,7 +113,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
           <Card>
             <Box sx={{ position: 'relative' }}>
               <CardMedia
-                sx={{ height: '143vh', backgroundColor: 'white', opacity: 0.12 }}
+                sx={{ height: '110vh', backgroundColor: 'white', opacity: 0.12 }}
                 image={homeSeriesmainImage}
               />
               <Box
@@ -359,132 +359,134 @@ function showProductsForDesktop(props,handlePopoverOpen,
 }
 
 
-// function showProductsForMobile() {
-//   const theme = useTheme();
-//   const [activeStep, setActiveStep] = React.useState(0);
-//   const maxSteps = images.length;
+function showProductsForMobile(theme, activeStep, setActiveStep) {
 
-//   const handleNext = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//   };
 
-//   const handleBack = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-//   };
+  const maxSteps = images.length;
 
-//   const handleStepChange = (step) => {
-//     setActiveStep(step);
-//   };
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
 
-//   return <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem' }}>
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
 
-//     <Grid item>
-//       <Grid sx={{ flexDirection: 'column', width: '100%', dispaly: 'flex', justifyContent: 'center', textAlign: 'center' }}>
-//         <Grid item>
-//           <Typography variant='h4' sx={{ color: HeaderColor, padding: '2rem' }}>Our Products</Typography>
-//           <Typography variant='h6' sx={{ color: HeaderColor }}>Brio employs Advanced Safety Gears designed for high speeds and  advanced energy saving VVVF
-//             elevator system. The elevator has sensors that use Multiple
-//             Infrared Beams to watch the whole doorway. </Typography>
-//         </Grid>
-//         <Grid item sx={{ paddingTop: '1.5rem' }}>
-//           <Box sx={{
-//             maxWidth: 400,
-//             flexGrow: 1,
-//             borderRadius: '0.5rem',
-//             boxShadow: '8px 8px 5px #3930306e',
-//             borderBottom: '2px solid #3930301f',
-//             borderRight: '2px solid #39303008',
-//             borderLeft: '2px solid #39303008'
-//           }}>
-//             <AutoPlaySwipeableViews
-//               axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-//               index={activeStep}
-//               onChangeIndex={handleStepChange}
-//               enableMouseEvents
-//             >
-//               {images.map((step, index) => (
-//                 <div key={step.label}>
-//                   {Math.abs(activeStep - index) <= 2 ? (
-//                     <Box
-//                       component="img"
-//                       sx={{
-//                         height: '65vh',
-//                         display: 'block',
-//                         overflow: 'hidden',
-//                         width: '100%',
-//                       }}
-//                       src={step.imgPath}
-//                       alt={step.label}
-//                     />
-//                   ) : null}
-//                   <Paper
-//                     square
-//                     sx={{
-//                       display: 'flex',
-//                       alignItems: 'center',
-//                       textAlign: 'center',
-//                       height: 'auto',
-//                       width: '100%',
-//                       justifyContent: 'center',
-//                       paddingTop: '1.5rem',
-//                       paddingBottom: '1.5rem'
-//                     }}
-//                   >
-//                     <Typography variant='h6' sx={{ color: GoldColor, fontWeight: 30 }}>{images[activeStep].label}</Typography>
-//                   </Paper>
-//                 </div>
-//               ))}
-//             </AutoPlaySwipeableViews>
-//             <MobileStepper
-//               steps={maxSteps}
-//               position="static"
-//               activeStep={activeStep}
-//               nextButton={
-//                 <Button
-//                   size="small"
-//                   onClick={handleNext}
-//                   disabled={activeStep === maxSteps - 1}
-//                 >
-//                   {/* Next */}
-//                   {theme.direction === 'rtl' ? (
-//                     <KeyboardArrowLeft />
-//                   ) : (
-//                     <KeyboardArrowRight />
-//                   )}
-//                 </Button>
-//               }
-//               backButton={
-//                 <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-//                   {theme.direction === 'rtl' ? (
-//                     <KeyboardArrowRight />
-//                   ) : (
-//                     <KeyboardArrowLeft />
-//                   )}
-//                   {/* Back */}
-//                 </Button>
-//               }
-//             />
-//           </Box>
-//         </Grid>
-//       </Grid>
-//     </Grid>
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
 
-//     <Grid item sx={{ display: 'flex', justifyContent: 'center', padding: '4rem 1rem 4rem 1rem', width: '100%' }}>
-//       <Button variant="contained" sx={{
-//         width: '100%',
-//         boxShadow: '10px 10px 5px #3930306e',
-//         padding: '0.9rem 1.5rem 0.9rem 1.5rem',
-//         fontSize: '1rem',
-//         borderRadius: '1.5rem'
-//       }}>
-//         Download Broucher
-//       </Button>
-//     </Grid>
+  return <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem' }}>
 
-//   </Grid>
-// }
+    <Grid item>
+      <Grid sx={{ flexDirection: 'column', width: '100%', dispaly: 'flex', justifyContent: 'center', textAlign: 'center' }}>
+        <Grid item>
+          <Typography variant='h4' sx={{ color: HeaderColor, padding: '2rem' }}>Our Products</Typography>
+          <Typography variant='h6' sx={{ color: HeaderColor }}>Brio employs Advanced Safety Gears designed for high speeds and  advanced energy saving VVVF
+            elevator system. The elevator has sensors that use Multiple
+            Infrared Beams to watch the whole doorway. </Typography>
+        </Grid>
+        <Grid item sx={{ display: 'flex', justifyContent: 'center', paddingTop: '1.5rem' }}>
+          <Box sx={{
+            maxWidth: 400,
+            flexGrow: 1,
+            borderRadius: '0.5rem',
+            boxShadow: '8px 8px 5px #3930306e',
+            borderBottom: '2px solid #3930301f',
+            borderRight: '2px solid #39303008',
+            borderLeft: '2px solid #39303008'
+          }}>
+            <AutoPlaySwipeableViews
+              axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+              index={activeStep}
+              onChangeIndex={handleStepChange}
+              enableMouseEvents
+            >
+              {images.map((step, index) => (
+                <div key={step.label}>
+                  {Math.abs(activeStep - index) <= 2 ? (
+                    <Box
+                      component="img"
+                      sx={{
+                        height: '65vh',
+                        display: 'block',
+                        overflow: 'hidden',
+                        width: '100%',
+                      }}
+                      src={step.imgPath}
+                      alt={step.label}
+                    />
+                  ) : null}
+                  <Paper
+                    square
+                    sx={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                      height: 'auto',
+                      width: '100%',
+                      justifyContent: 'center',
+                      paddingTop: '1.5rem',
+                      paddingBottom: '1.5rem'
+                    }}
+                  >
+                    <Typography variant='h6' sx={{ color: GoldColor, fontWeight: 30 }}>{images[activeStep].label}</Typography>
+                  </Paper>
+                </div>
+              ))}
+            </AutoPlaySwipeableViews>
+            <MobileStepper
+              steps={maxSteps}
+              position="static"
+              activeStep={activeStep}
+              nextButton={
+                <Button
+                  size="small"
+                  onClick={handleNext}
+                  disabled={activeStep === maxSteps - 1}
+                >
+                  {/* Next */}
+                  {theme.direction === 'rtl' ? (
+                    <KeyboardArrowLeft />
+                  ) : (
+                    <KeyboardArrowRight />
+                  )}
+                </Button>
+              }
+              backButton={
+                <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                  {theme.direction === 'rtl' ? (
+                    <KeyboardArrowRight />
+                  ) : (
+                    <KeyboardArrowLeft />
+                  )}
+                  {/* Back */}
+                </Button>
+              }
+            />
+          </Box>
+        </Grid>
+      </Grid>
+    </Grid>
+
+    <Grid item sx={{ display: 'flex', justifyContent: 'center', padding: '4rem 1rem 4rem 1rem', width: '100%' }}>
+      <Button variant="contained" sx={{
+        width: '100%',
+        boxShadow: '10px 10px 5px #3930306e',
+        padding: '0.9rem 1.5rem 0.9rem 1.5rem',
+        fontSize: '1rem',
+        borderRadius: '1.5rem'
+      }}>
+        Download Broucher
+      </Button>
+    </Grid>
+
+  </Grid>
+}
 
 function ProductsElevationContainer(props) {
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
 
   const [anchorEl, setAnchorEl] =   useState(null);
   const [anchorEl1, setAnchorEl1] = useState(null);
@@ -544,7 +546,7 @@ function ProductsElevationContainer(props) {
     anchorEl3,
     anchorEl4
      )}
-      {/* {!props.isDeskTopDevice && showProductsForMobile()} */}
+      {!props.isDeskTopDevice && showProductsForMobile(theme, activeStep, setActiveStep)}
       </>
   );
 }

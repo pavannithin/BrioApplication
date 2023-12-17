@@ -34,14 +34,14 @@ const StyledBox = styled(Box)`
 
 function EliganceAndStyleElevationContainer(props) {
   return (
-    <Box sx={{ height: "100vh", padding: "0rem 5rem 10rem 5rem" }}>
+    <Box sx={{ height: "100vh", padding: "0rem 5rem 0rem 5rem" }}>
       <Grid
         sx={{
           display: "flex",
           columnGap: "1.5rem",
           width: "100%",
           justifyContent: "center",
-          padding: "8rem 4rem 0rem 4rem",
+          padding: "3rem 4rem 0rem 4rem",
         }}
       >
         <Grid
@@ -119,7 +119,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: GoldColor, fontWeight: 'bold' }}
+                  sx={{ color: 'crimson', fontWeight: 'bold' }}
                 >
                   
                   <span> Classic </span>{" "}
@@ -146,7 +146,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: GoldColor, fontWeight: 'bold' }}
+                  sx={{ color: 'crimson', fontWeight: 'bold' }}
                 >
                   
                   <span> Pro-Cabin </span>{" "}
@@ -173,7 +173,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: GoldColor, fontWeight: 'bold' }}
+                  sx={{ color: 'crimson', fontWeight: 'bold' }}
                 >
                   
                   <span> Glass Cabin </span>{" "}
@@ -199,7 +199,7 @@ function EliganceAndStyleElevationContainer(props) {
               <span>
                 <Typography
                   variant="h6"
-                  sx={{ color: GoldColor, fontWeight: 'bold' }}
+                  sx={{ color: 'crimson', fontWeight: 'bold' }}
                 >
                   
                   <span> Elegance </span>{" "}
