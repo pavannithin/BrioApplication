@@ -21,8 +21,8 @@ import { Box } from '@mui/material';
 const theme = createTheme({
   typography: {
     allVariants: {
-      // fontFamily: 'Didact Gothic',
-      fontFamily: 'poppins'
+      fontFamily: 'Didact Gothic',
+      // fontFamily: 'poppins'
       // fontSize: '48px'
       // fontFamily: 'Elena, serif'
       // fontFamily: 'Neuehaasdisplay mediu,sans-serif'
@@ -94,7 +94,12 @@ useEffect(() => {
   return (
     <ThemeProvider theme={theme}>
       <>
-      <SubmitFormDialog open={openDialog} handleClose={onCloseFreeSiteCheckButtonCLick} buttonText='Get Free Site Feasibility Check' isOpeningDialog={true}/>
+      <SubmitFormDialog 
+      open={openDialog} 
+      handleClose={onCloseFreeSiteCheckButtonCLick} 
+      buttonText='Get Free Site Feasibility Check' 
+      isOpeningDialog={true}/>
+      
         <AppHeader isDeskTopDevice={isDeskTopDevice} />
         <HomeSeriesElevationContainer isDeskTopDevice={isDeskTopDevice} />
         <MinPageAboutUsContainer isDeskTopDevice={isDeskTopDevice} />
@@ -102,12 +107,11 @@ useEffect(() => {
 
        <NoPitElevationsContainer isDeskTopDevice={isDeskTopDevice} />
         <VideoBannerContainer isDeskTopDevice={isDeskTopDevice} />
-  
-         <Bigbanner isDeskTopDevice={isDeskTopDevice} />
+         {/* <Bigbanner isDeskTopDevice={isDeskTopDevice} /> */}
         <EliganceAndStyle isDeskTopDevice={isDeskTopDevice} />
         <ReviewContainer isDeskTopDevice={isDeskTopDevice} />
-        {/* <SubmitQueryContainer isDeskTopDevice={isDeskTopDevice} /> */}
-        {/* <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice} /> */}
+        <SubmitQueryContainer isDeskTopDevice={isDeskTopDevice} />
+        <CompanyFooterContainer isDeskTopDevice={isDeskTopDevice} />
       </>
 
     </ThemeProvider>

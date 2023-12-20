@@ -12,7 +12,7 @@ import { HeaderColor, GoldColor, emailId } from '../Pages/Constants';
 
 export default function SubmitFormDialog(props) {
 
-  const { open, handleClose, buttonText, isOpeningDialog } = props;
+  const { open, handleClose, buttonText, isOpeningDialog, isDeskTopDevice } = props;
 
   // const Transition = React.forwardRef(function Transition(props, ref) {
   //   return <Slide direction="up" ref={ref} {...props} />;

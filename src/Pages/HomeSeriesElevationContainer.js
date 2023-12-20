@@ -45,8 +45,8 @@ function HomeSeriesElevationContainer(props) {
           <Grid>
             <Grid item>
               <SwapVerticalCircleOutlinedIcon sx={{ color: GoldColor, fontSize: '4rem' }} />
-              <Typography variant='h4' sx={{ padding: '0rem 2rem 1rem 2rem', color: GoldColor }}> Home lifts at their best </Typography>
-              <Typography variant='h6' sx={{ padding: '0rem 2rem 1rem 2rem'}}>
+              <Typography variant='h4' fontFamily= 'Didact Gothic' sx={{ padding: '0rem 2rem 1rem 2rem', color: GoldColor }}> Home lifts at their best </Typography>
+              <Typography variant='h6' fontFamily= 'Didact Gothic' sx={{ padding: '0rem 2rem 1rem 2rem'}}>
                 <Box sx={{color: HeaderColor}}>
                 Providing Lift products right from small <span style={{fontWeight: 'bold'}}>home lifts</span> to large lifts for <span style={{fontWeight: 'bold'}}>commercial buildings</span> and public utility
                   {/* Providing Lift products right from small home lifts to large lifts for commercial buildings and public utility */}
@@ -208,38 +208,54 @@ function HomeSeriesElevationContainer(props) {
 
   function showLeftContainer(prop) {
     const { onCLick } = prop;
-    return <Grid item sx={{ width: '65%', height: 'auto', padding: '5rem 10rem 0vh 0rem' }}>
+    return <Grid item sx={{ 
+    width: '60%', 
+    maxHeight: '160vh',
+    overflow: 'hide',
+    height: 'auto', 
+    padding: '5rem 10rem 0vh 0rem' }}>
       <Grid>
         <Grid item>
           <SwapVerticalCircleOutlinedIcon sx={{ color: 'crimson', fontSize: '4rem' }} />
           {/* <Typography variant='h3' sx={{ padding: '1rem 3rem 1rem 3rem' }}> Home lifts at their best </Typography> */}
           <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
-            <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
-              <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
-            </Grid>
+            {/* <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+              <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} 
+              height='90%' 
+              width='90%' />
+            </Grid> */}
             <Grid item>
-              <Typography variant='h3' sx={{ paddingTop: '0.5rem', color: GoldColor }}>Home lifts at their best</Typography>
+              <Typography variant='h2' fontFamily= 'Didact Gothic' sx={{ paddingTop: '0.5rem', color: GoldColor }}>Home lifts at their best</Typography>
             </Grid>
-            <Grid item sx={{ width: '7%', alignContent: 'center' }}>
-              <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
-            </Grid>
+            {/* <Grid item sx={{ width: '7%', alignContent: 'center' }}>
+              <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} 
+              height='90%' 
+              width='90%' />
+            </Grid> */}
           </Grid>
-          <Typography variant='h6' sx={{ padding: '0rem 3rem 1rem 3rem' }}>
+          <Typography variant='h6' fontFamily= 'Didact Gothic' sx={{ padding: '0rem 3rem 1rem 3rem' }}>
             Providing Lift products right from small <span style={{fontWeight: 'bold'}}>home lifts</span> to large lifts for <span style={{fontWeight: 'bold'}}>commercial buildings</span> and public utility
           </Typography>
         </Grid>
         {/* image 1 */}
         <Grid item>
-          <Box sx={{ position: 'relative', backgroundColor: '#021f39f0', border: '0.3rem solid #ffc445a8' }} p='2.5rem'>
-            <Typography variant='h4' sx={{ color: GoldColor }}>Why to choose Brio HomeLift ?</Typography>
+          <Box sx={{ 
+            position: 'relative', 
+            backgroundColor: '#021f39f0', 
+            maxHeight: '70vh',
+            overflow: 'scroll',
+            border: '0.3rem solid #ffc445a8',
+             }} p='2.5rem'>
+            <Typography variant='h4' sx={{ color: GoldColor }} fontFamily= 'Didact Gothic'>Why to choose Brio HomeLift ?</Typography>
             <Box p='1.6rem'>
+              
               <List>
                 <ListItem disablePadding>
                   <ListItemIcon>
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Architect Friendly</Typography>
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Architect Friendly</Typography>
                   </ListItemText>
                 </ListItem>
 
@@ -248,7 +264,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Compact, Quiet And Easy To Install</Typography>
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Compact, Quiet And Easy To Install</Typography>
                   </ListItemText>
                 </ListItem>
 
@@ -257,7 +273,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Power Consumption Like Any
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Power Consumption Like Any
                       Household Electrical Appliance</Typography>
                   </ListItemText>
                 </ListItem>
@@ -267,7 +283,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Connects To Any Electrical 230v
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Connects To Any Electrical 230v
                       Outlet
                     </Typography>
                   </ListItemText>
@@ -278,7 +294,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Custom Interior Cabin With Expert
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Custom Interior Cabin With Expert
                       Suggestion
                     </Typography>
                   </ListItemText>
@@ -290,7 +306,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Reduced Maintenance Costs</Typography>
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Reduced Maintenance Costs</Typography>
                   </ListItemText>
                 </ListItem>
 
@@ -299,7 +315,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>5-year Warranty
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>5-year Warranty
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -309,7 +325,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Customised Product
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Customised Product
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -319,7 +335,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Imported From  Italy
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Imported From  Italy
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -329,7 +345,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>No Civil Work
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>No Civil Work
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -339,7 +355,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>360 Degree Panoramic View
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>360 Degree Panoramic View
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -349,7 +365,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor, transform: 'rotate(180deg)' }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Just Plug & Go
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Just Plug & Go
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -359,7 +375,7 @@ function HomeSeriesElevationContainer(props) {
                     <ArrowDropDownCircleIcon sx={{ color: GoldColor }} />
                   </ListItemIcon>
                   <ListItemText sx={{ color: 'white' }} >
-                    <Typography variant='h6'>Stand Alone Structure
+                    <Typography variant='h6' fontFamily= 'Didact Gothic'>Stand Alone Structure
                     </Typography>
                   </ListItemText>
                 </ListItem>
@@ -406,7 +422,7 @@ function HomeSeriesElevationContainer(props) {
               }}
             >
               <Box sx={{ backgroundColor: GoldColor }}>
-                <Typography variant="h5" sx={{ paddingLeft: '2rem', color: 'white' }}>With Masonary Shaft</Typography>
+                <Typography fontFamily= 'Didact Gothic' variant="h5" sx={{ paddingLeft: '2rem', color: 'white' }}>With Masonary Shaft</Typography>
               </Box>
             </Box>
           </StyledBox>
@@ -433,7 +449,7 @@ function HomeSeriesElevationContainer(props) {
               }}
             >
               <Box sx={{ backgroundColor: GoldColor }}>
-                <Typography variant="h5" sx={{ paddingLeft: '2%', color: 'white' }}>With Metal Shaft</Typography>
+                <Typography fontFamily= 'Didact Gothic' variant="h5" sx={{ paddingLeft: '2%', color: 'white' }}>With Metal Shaft</Typography>
               </Box>
             </Box>
           </StyledBox>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import { Paper } from '@mui/material'
-import companyprofile from './../asserts/contactus.jpg';
+// import companyprofile from './../asserts/contactus.jpg';
 import { GoldColor, HeaderColor, SubHeaderColor } from './Constants';
 import stamp from './../asserts/Stamp.png';
 import { CardActions, CardContent, CardMedia, CardHeader, CardActionArea } from '@mui/material';
@@ -11,10 +11,11 @@ import YouTube from 'react-youtube';
 function MinPageAboutUsContainer(props) {
 
   const opts = {
-    height: '360',
+
+    height: '340',
     width: '600',
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
       controls: 0,
       disablekb: 1,
       rel: 0,
@@ -22,10 +23,10 @@ function MinPageAboutUsContainer(props) {
   };
 
   const Mblopts = {
-    height: '300',
+    height: '250',
     width: '100%',
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
       controls: 0,
       disablekb: 1,
       rel: 0,
@@ -51,19 +52,19 @@ function MinPageAboutUsContainer(props) {
   
           <Grid item sx={{paddingBottom: '2rem', width: '100%', textAlign: 'center' }}>
             <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center' }}>
-              <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+              {/* <Grid item sx={{ width: '7%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
                 <img src={
                   'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} 
                   height='100%' width='100%' />
-              </Grid>
+              </Grid> */}
               <Grid item>
                 <Typography variant='h4' sx={{ paddingTop: '0.5rem', color: GoldColor }}>About Us</Typography>
               </Grid>
-              <Grid item sx={{ width: '7%', alignContent: 'center' }}>
+              {/* <Grid item sx={{ width: '7%', alignContent: 'center' }}>
                 <img src={
                   'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} 
                   height='100%' width='100%' />
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
   
@@ -84,7 +85,7 @@ function MinPageAboutUsContainer(props) {
                 overflowX: 'hidden', 
               maxHeight: { xs: '55vh', sm: '20vh', md: '43vh' }, 
               textAlign: 'start' }}>
-                <Typography sx={{ color: SubHeaderColor, fontSize: '1.2rem' }}>
+                <Typography fontFamily= 'Didact Gothic' sx={{ color: SubHeaderColor, fontSize: '1.2rem' }}>
                   Welcome to Brio Elevators, where innovation meets tradition to redefine the vertical transportation experience. With a remarkable six years of expertise in Elevator Component Sales, we have proudly established ourselves as a pioneering force in the industry. As The first Indo-Italian elevator company, Brio Elevators seamlessly integrates the rich heritage of Italian craftsmanship with the dynamic spirit of innovation from India.
                   {/* At Brio Elevators, safety is at the core of our values. Our main components, including motors and controllers sourced from Italy, strictly adhere to European standards MD 2006/42/EC and EN-81 41. Committed to excellence, 80% of our main components are imported, meeting the highest European standards, while the remaining 20% is proudly of Indian make, complying with ISO standards (ISO 9001 - 2015). */}
                   {/* What truly sets us apart is our unique approach to manufacturing. While the core mechanisms are crafted in Italy, we take pride in locally manufacturing designer cabins and shafts in our warehouse.  */}
@@ -118,7 +119,7 @@ function MinPageAboutUsContainer(props) {
                 height='90%' width='90%' />
             </Grid>
             <Grid item>
-              <Typography variant='h4' sx={{ paddingTop: '0.5rem', color: GoldColor }}>About Us</Typography>
+              <Typography fontFamily= 'Didact Gothic' variant='h4' sx={{ paddingTop: '0.5rem', color: GoldColor }}>About Us</Typography>
             </Grid>
             <Grid item sx={{ width: '3%', alignContent: 'center' }}>
               <img src={
@@ -138,9 +139,11 @@ function MinPageAboutUsContainer(props) {
                 width: { sx: '100%', sm: '100%', md: '70%' },
                 display: 'flex', 
                 justifyItems: 'center',
-                textAlign: 'start' 
+                textAlign: 'start',
+                maxHeight: '40vh',
+                overflow:  'hidden'
             }}>
-              <Typography variant='h6' sx={{ color: SubHeaderColor }}>
+              <Typography variant='h6' sx={{ color: HeaderColor }} fontFamily= 'Didact Gothic'>
                 Welcome to <b>Brio Elevators</b>, where innovation meets tradition to redefine the vertical transportation experience. 
                 With a remarkable six years of expertise in Elevator Component Sales, we have proudly established ourselves as a 
                 pioneering force in the industry. As The <b>first Indo-Italian elevator company</b>, Brio Elevators seamlessly integrates 

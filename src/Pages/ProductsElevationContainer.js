@@ -101,7 +101,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
             </Grid>
           </Grid>
 
-          <Typography variant='h6' sx={{ color: HeaderColor, padding: '0 2.5rem 0 2.5rem', color: SubHeaderColor }}>"Our extensive product lineup ensures that we provide an
+          <Typography fontFamily= 'Didact Gothic' variant='h6' sx={{ color: HeaderColor, padding: '0 2.5rem 0 2.5rem', color: SubHeaderColor }}>"Our extensive product lineup ensures that we provide an
             <span style={{ fontWeight: 'bold' }}> accessibility solution</span> tailored to every home. Just as each unit is uniquely crafted to user specifications,
             our diverse product range is meticulously designed to cater to the individual needs of every customer.
             As one of the rare companies in India, we deliver elevator solutions across multiple segments, including <span style={{ fontWeight: 'bold' }}>Home Elevators,
@@ -141,12 +141,12 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             sx={{ height: '31rem', width: '15rem', borderRadius: '0.7rem' }}
                             image={product1}
                             // onMouseEnter={(e) => {handlePopoverOpen(e, "product1")}}
-                            onMouseLeave={(e) => { handlePopoverClose(e, "product1") }}
+                            // onMouseLeave={(e) => { handlePopoverClose(e, "product1") }}
                             onClick={(e) => { handlePopoverOpen(e, "product1") }}
                           />
                         </StyledBox>
 
-                        <Popover
+                        {/* <Popover
                           id="mouse-over-popover"
                           sx={{
                             pointerEvents: 'none',
@@ -177,10 +177,10 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             standards like MD 2006 42 EC and EN 81-41, our elevators not only meet but exceed them. With the
                             ability to easily update and diagnose, we confidently dominate the Home Elevator Industry.</Typography></Box>
                           <img height='400vh' width='400vh' src={productSpec1} />
-                        </Popover>
+                        </Popover> */}
                       </Grid>
                       <Grid item sx={{ padding: '2.5rem 0.5rem 1rem 0.5rem', width: '100%' }}>
-                        <Typography variant='h6' sx={{ color: HeaderColor, boxShadow: '2px 2px 20px #E09900' }}>BRIO <b>GEARLESS BELT</b></Typography>
+                        <Typography variant='h6' sx={{ color: HeaderColor }}>BRIO <b>GEARLESS BELT</b></Typography>
                       </Grid>
                     </Grid>
                   </Grid>
@@ -193,12 +193,12 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             sx={{ height: '31rem', width: '15rem', borderRadius: '0.5rem' }}
                             image={product2}
                             // onMouseEnter={(e) => {handlePopoverOpen(e, "product2")}}
-                            onMouseLeave={(e) => { handlePopoverClose(e, "product2") }}
+                            // onMouseLeave={(e) => { handlePopoverClose(e, "product2") }}
                             onClick={(e) => { handlePopoverOpen(e, "product2") }}
                           />
                         </StyledBox>
 
-                        <Popover
+                        {/* <Popover
                           id="mouse-over-popover"
                           sx={{
                             pointerEvents: 'none',
@@ -226,10 +226,10 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             even special and challenging projects. It is an elegant and, above all, truly convenient solution,
                             allowing for perfect fitting within any existing or new building.</Typography></Box>
                           <img height='400vh' width='400vh' src={productSpec2} />
-                        </Popover>
+                        </Popover> */}
                       </Grid>
                       <Grid item sx={{ padding: '2.5rem 0.5rem 1rem 0.5rem', width: '100%' }}>
-                        <Typography variant='h6' sx={{ color: HeaderColor, boxShadow: '2px 2px 20px #E09900' }}>BRIO <b>GEARLESS ROPE</b></Typography></Grid>
+                        <Typography variant='h6' sx={{ color: HeaderColor }}>BRIO <b>GEARLESS ROPE</b></Typography></Grid>
                     </Grid>
                   </Grid>
                   {/* Prod - 3 */}
@@ -241,12 +241,12 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             sx={{ height: '31rem', width: '15rem', borderRadius: '0.5rem' }}
                             image={product3}
                             // onMouseEnter={(e) => {handlePopoverOpen(e, "product3")}}
-                            onMouseLeave={(e) => { handlePopoverClose(e, "product3") }}
+                            // onMouseLeave={(e) => { handlePopoverClose(e, "product3") }}
                             onClick={(e) => { handlePopoverOpen(e, "product3") }}
                           />
                         </StyledBox>
 
-                        <Popover
+                        {/* <Popover
                           id="mouse-over-popover"
                           sx={{
                             pointerEvents: 'none',
@@ -274,10 +274,10 @@ function showProductsForDesktop(props,handlePopoverOpen,
                               Powered by established and dependable hydraulic technology, this system ensures a
                               seamless and reliable experience.</Typography></Box>
                           <img height='400vh' width='400vh' src={productSpec3} />
-                        </Popover>
+                        </Popover> */}
                       </Grid>
                       <Grid item sx={{ padding: '2.5rem 0.5rem 1rem 0.5rem', width: '100%' }}>
-                        <Typography variant='h6' sx={{ color: HeaderColor, boxShadow: '2px 2px 20px #E09900' }}>BRIO <b>HYDRAULIC</b></Typography></Grid>
+                        <Typography variant='h6' sx={{ color: HeaderColor }}>BRIO <b>HYDRAULIC</b></Typography></Grid>
                     </Grid>
                   </Grid>
                   {/* Prod - 4 */}
@@ -289,12 +289,12 @@ function showProductsForDesktop(props,handlePopoverOpen,
                             sx={{ height: '31rem', width: '15rem', borderRadius: '0.5rem' }}
                             image={product4}
                             // onMouseEnter={(e) => {handlePopoverOpen(e, "product4")}}
-                            onMouseLeave={(e) => { handlePopoverClose(e, "product4") }}
+                            // onMouseLeave={(e) => { handlePopoverClose(e, "product4") }}
                             onClick={(e) => { handlePopoverOpen(e, "product4") }}
                           />
                         </StyledBox>
 
-                        <Popover
+                        {/* <Popover
                           id="mouse-over-popover"
                           sx={{
                             pointerEvents: 'none',
@@ -321,10 +321,10 @@ function showProductsForDesktop(props,handlePopoverOpen,
                               every home. Just as each unit is uniquely crafted to user specifications, our diverse product range is meticulously designed
                               to cater to the individual needs of every customer. </Typography></Box>
                           <img height='400vh' width='400vh' src={productSpec4} />
-                        </Popover>
+                        </Popover> */}
                       </Grid>
                       <Grid item sx={{ padding: '2.5rem 0.5rem 1rem 0.5rem', width: '100%' }}>
-                        <Typography variant='h6' sx={{ color: HeaderColor, boxShadow: '2px 2px 20px #E09900' }}>BRIO <b>MOBILITY SERIES</b></Typography></Grid>
+                        <Typography variant='h6' sx={{ color: HeaderColor }}>BRIO <b>MOBILITY SERIES</b></Typography></Grid>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -381,7 +381,7 @@ function showProductsForMobile(theme, activeStep, setActiveStep) {
     <Grid item>
       <Grid sx={{ flexDirection: 'column', width: '100%', dispaly: 'flex', justifyContent: 'center', textAlign: 'center' }}>
         <Grid item>
-          <Typography variant='h4' sx={{ color: HeaderColor, padding: '2rem' }}>Our Products</Typography>
+          <Typography variant='h4' sx={{ color: GoldColor, padding: '2rem' }}>Our Products</Typography>
           <Typography variant='h6' sx={{ color: HeaderColor }}>Brio employs Advanced Safety Gears designed for high speeds and  advanced energy saving VVVF
             elevator system. The elevator has sensors that use Multiple
             Infrared Beams to watch the whole doorway. </Typography>
