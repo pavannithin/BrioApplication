@@ -208,12 +208,12 @@ function HomeSeriesElevationContainer(props) {
 
   function showLeftContainer(prop) {
     const { onCLick } = prop;
-    return <Grid item sx={{ 
-    width: '60%', 
-    maxHeight: '160vh',
-    overflow: 'hide',
-    height: 'auto', 
-    padding: '5rem 10rem 0vh 0rem' }}>
+    return <Grid item xs={12} md={7} sx={{ 
+    // width: '60%', 
+    // maxHeight: '160vh',
+    // overflow: 'hide',
+    // height: 'auto', 
+    padding: {sm:'5rem 5rem 0vh 0rem',md:'5rem 10rem 0vh 0rem'} }}>
       <Grid>
         <Grid item>
           <SwapVerticalCircleOutlinedIcon sx={{ color: 'crimson', fontSize: '4rem' }} />
@@ -242,8 +242,8 @@ function HomeSeriesElevationContainer(props) {
           <Box sx={{ 
             position: 'relative', 
             backgroundColor: '#021f39f0', 
-            maxHeight: '70vh',
-            overflow: 'scroll',
+            // maxHeight: '70vh',
+            // overflow: 'scroll',
             border: '0.3rem solid #ffc445a8',
              }} p='2.5rem'>
             <Typography variant='h4' sx={{ color: GoldColor }} fontFamily= 'Didact Gothic'>Why to choose Brio HomeLift ?</Typography>
@@ -398,7 +398,7 @@ function HomeSeriesElevationContainer(props) {
   }
 
   function showRightContainer() {
-    return <Grid item sx={{ width: '32%' }}>
+    return <Grid item sx={{ width: { sm:'100%',md:'32%'} }}>
       <Grid>
         {/* image 2 */}
         <Grid item sx={{ paddingBottom: '6rem' }}>
@@ -459,11 +459,11 @@ function HomeSeriesElevationContainer(props) {
   }
 
   function forDeskTop(prop) {
-    return <Box sx={{ width: '100%', padding: '3rem 0rem 0rem 0rem' }}>
+    return <Box sx={{ width: '100%' }}>
       <Card>
         <Box sx={{ position: 'relative' }}>
           <CardMedia
-            sx={{ height: '170vh' }}
+            sx={{ height:{ sm: '350vh', md:'200vh', lg: '180vh'} }}
             image={homeSeriesmainImage}
           />
           <Box
@@ -481,18 +481,21 @@ function HomeSeriesElevationContainer(props) {
               justifyContent: 'space-around'
             }}
           >
-            <Grid container sx={{
+            <Grid container  alignItems="center" sx={{
               width: '100%',
               dispaly: 'flex',
               justifyContent: 'space-between',
-              padding: '0rem 8rem 0rem 8rem',
+              padding: {sm:'0rem 4rem 0rem 4rem',md:'0rem 8rem 0rem 8rem'},
               textAlign: 'center',
-              color: HeaderColor
-            }}>
+              color: HeaderColor,
+              marginTop:"-10rem"
+                            }}>
 
               {/* DeskTop */}
-              {props.isDeskTopDevice && showLeftContainer(prop)}
-              {props.isDeskTopDevice && showRightContainer(prop)}
+              {/* {props.isDeskTopDevice && showLeftContainer(prop)}
+              {props.isDeskTopDevice && showRightContainer(prop)} */}
+                 {showLeftContainer(prop)}
+              {showRightContainer(prop)}
             </Grid>
           </Box>
         </Box>
@@ -523,8 +526,9 @@ function HomeSeriesElevationContainer(props) {
     <>
       {/* Submit Form Dialig */}
       <SubmitFormDialog open={openDialog} handleClose={onCloseCLick} buttonText='Download Broucher' />
-      {!props.isDeskTopDevice && forMobile({ onCLick })}
-      {props.isDeskTopDevice && forDeskTop({ onCLick })}
+      {/* {!props.isDeskTopDevice && forMobile({ onCLick })} */}
+      {/* {props.isDeskTopDevice && forDeskTop({ onCLick })} */}
+      {forDeskTop({ onCLick })}
     </>
   );
 }

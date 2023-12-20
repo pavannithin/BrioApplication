@@ -38,8 +38,8 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 const styles = {
   paperContainer: {
     backgroundImage: `url(${mainimage})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundRepeat: "round",
     // height: "97vh",
     // width: "100%",
   },
@@ -513,11 +513,11 @@ export default function AppHeader(props) {
         >
           <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
             <Grid item sx={{ padding: "1rem" }}>
-              <Grid sx={{ display: 'flex', columnGap: '1rem', width: '100%', justifyContent: 'center' }}>
+              <Grid alignItems="center" sx={{ display: 'flex', columnGap: '1rem', width: '100%', justifyContent: 'center' }}>
                 <Grid item sx={{ width: '10%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
                   <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'}
-                    height='85%'
-                    width='90%'
+                    // height='90%'
+                    // width='90%'
                     color='#104c8a' />
                 </Grid>
                 <Grid item>
@@ -543,8 +543,9 @@ export default function AppHeader(props) {
                 </Grid>
                 <Grid item sx={{ width: '10%', alignContent: 'center' }}>
                   <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'}
-                    height='85%'
-                    width='90%' />
+                    // height='85%'
+                    // width='90%'
+                     />
                 </Grid>
               </Grid>
             </Grid>

@@ -58,9 +58,8 @@ function showSubmitForm() {
 }
 
 function ExpertiseInGearLess() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '22%', fontSize: '0.8rem' }}>
-    <Grid>
-      <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><EngineeringIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
+  return <Grid container>
+      <Grid item  sx={{ width:'100%', display: 'flex', justifyContent: 'center' }}><EngineeringIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>
         <Typography variant='h6' fontFamily= 'Didact Gothic' color={HeaderColor}>Expertise In GearLess</Typography></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'start', color: '#00264d', fontFamily: 'Didact Gothic' }}>
@@ -69,11 +68,10 @@ function ExpertiseInGearLess() {
         right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome 
         elevator.</Grid>
     </Grid>
-  </Box>
 }
 
 function EnergyEffecient() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '21%', fontSize: '0.8rem' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', fontSize: '0.8rem' }}>
     <Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>
@@ -84,7 +82,7 @@ function EnergyEffecient() {
 }
 
 function ProgressiveSafetyGear() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', width: '21%', fontSize: '0.8rem' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', borderRadius: '40%', fontSize: '0.8rem' }}>
     <Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><TipsAndUpdatesIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>
@@ -96,7 +94,7 @@ function ProgressiveSafetyGear() {
 }
 
 function AutomatedResuceDevice() {
-  return <Box sx={{ display: 'flex', alignItems: 'center', width: '21%', fontSize: '0.8rem' }}>
+  return <Box sx={{ display: 'flex', alignItems: 'center', fontSize: '0.8rem' }}>
     <Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center' }}><PsychologyIcon sx={{ fontSize: '4rem' }} color="action" /></Grid>
       <Grid item sx={{ display: 'flex', justifyContent: 'center', color: '#00264d' }}>
@@ -108,23 +106,21 @@ function AutomatedResuceDevice() {
 
 function ProductSpecsContainer(props) {
   return (
-    <Grid sx={{ backgroundColor: '#faf6ed', 
-    display: 'flex', height: '40vh', width: 'auto',
+    <Grid container sx={{ backgroundColor: '#faf6ed', 
+    display: 'flex', p:{sm:'2rem 1rem',md: '4rem 2rem'}, width: 'auto',
      justifyContent: 'space-around', border: '1px solid white', padding: '0 2rem 0 2rem' }}>
-      <Grid item sx={{ display: 'contents' }}>
+      <Grid item sm={6} md={3} sx={{ display: 'contents' }}>
         {ExpertiseInGearLess()}
       </Grid>
-      <Grid item>
-      </Grid>
-      <Grid item sx={{ display: 'contents' }}>
+      
+      <Grid item sm={6} md={3} sx={{ display: 'contents' }}>
         {EnergyEffecient()}
       </Grid>
-      <Grid item>
-      </Grid>
-      <Grid item sx={{ display: 'contents' }}>
+     
+      <Grid item sm={6} md={3} sx={{ display: 'contents' }}>
         {AutomatedResuceDevice()}
       </Grid>
-      <Grid item sx={{ display: 'contents' }}>
+      <Grid item sm={6} md={3} sx={{ display: 'contents' }}>
         {ProgressiveSafetyGear()}
       </Grid>
     </Grid>

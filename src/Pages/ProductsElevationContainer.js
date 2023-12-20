@@ -90,15 +90,15 @@ function showProductsForDesktop(props,handlePopoverOpen,
         <Grid item>
 
           <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', padding: '2rem' }}>
-            <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+            {/* <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' color='#104c8a' />
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Typography variant='h4' sx={{ paddingTop: '0.5rem', color: GoldColor }}>Our Products</Typography>
             </Grid>
-            <Grid item sx={{ width: '3%', alignContent: 'center' }}>
+            {/* <Grid item sx={{ width: '3%', alignContent: 'center' }}>
               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
-            </Grid>
+            </Grid> */}
           </Grid>
 
           <Typography fontFamily= 'Didact Gothic' variant='h6' sx={{ color: HeaderColor, padding: '0 2.5rem 0 2.5rem', color: SubHeaderColor }}>"Our extensive product lineup ensures that we provide an
@@ -113,7 +113,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
           <Card>
             <Box sx={{ position: 'relative' }}>
               <CardMedia
-                sx={{ height: '110vh', backgroundColor: 'white', opacity: 0.12 }}
+                sx={{ height: { sm:'175vh', md:'125vh', lg:'110vh'}, backgroundColor: 'white', opacity: 0.12 }}
                 image={homeSeriesmainImage}
               />
               <Box
@@ -131,9 +131,9 @@ function showProductsForDesktop(props,handlePopoverOpen,
                   justifyContent: 'center'
                 }}
               >
-                <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', padding: '5rem 0rem 5rem 0rem' }}>
+                <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', padding: '5rem 0rem 5rem 0rem' }}>
                   {/* Prod - 1 */}
-                  <Grid item sx={{ height: '51%', width: '60%' }}>
+                  <Grid item sx={{ height: '51%' }}>
                     <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem 3rem 1rem 1rem' }}>
                       <Grid item>
                         <StyledBox>
@@ -185,7 +185,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                     </Grid>
                   </Grid>
                   {/* Prod - 2 */}
-                  <Grid item sx={{ height: '51%', width: '60%', paddingTop: '13rem' }}>
+                  <Grid item sx={{ height: '51%', paddingTop: '13rem' }}>
                     <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem 3rem 1rem 1rem' }}>
                       <Grid item>
                         <StyledBox>
@@ -233,7 +233,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                     </Grid>
                   </Grid>
                   {/* Prod - 3 */}
-                  <Grid item sx={{ height: '51%', width: '60%' }}>
+                  <Grid item sx={{ height: '51%' }}>
                     <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem 3rem 1rem 1rem' }}>
                       <Grid item>
                         <StyledBox>
@@ -281,7 +281,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
                     </Grid>
                   </Grid>
                   {/* Prod - 4 */}
-                  <Grid item sx={{ height: '51%', width: '60%', paddingTop: '13rem' }}>
+                  <Grid item sx={{ height: '51%', paddingTop: '13rem' }}>
                     <Grid sx={{ display: 'flex', flexDirection: 'column', padding: '1rem 3rem 1rem 1rem' }}>
                       <Grid item>
                         <StyledBox>
@@ -338,6 +338,14 @@ function showProductsForDesktop(props,handlePopoverOpen,
 
     <Box padding='0rem'>
       <ProductSpecsContainer isDeskTopDevice={props.isDeskTopDevice} />
+      <Grid container>
+        <Grid item>
+          
+        </Grid>
+        <Grid item></Grid>
+        <Grid item></Grid>
+        <Grid item></Grid>
+      </Grid>
     </Box>
 
     <Grid item sx={{ display: 'flex', justifyContent: 'end', width: '100%', padding: '2rem 3rem 1rem 0rem' }}>
@@ -537,7 +545,7 @@ function ProductsElevationContainer(props) {
   };
 
   return (
-    <>{props.isDeskTopDevice && showProductsForDesktop(props, 
+    <>{showProductsForDesktop(props, 
     handlePopoverOpen, 
     handlePopoverClose,
     anchorEl,
@@ -546,7 +554,7 @@ function ProductsElevationContainer(props) {
     anchorEl3,
     anchorEl4
      )}
-      {!props.isDeskTopDevice && showProductsForMobile(theme, activeStep, setActiveStep)}
+      {/* {!props.isDeskTopDevice && showProductsForMobile(theme, activeStep, setActiveStep)} */}
       </>
   );
 }
