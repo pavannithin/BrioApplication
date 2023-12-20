@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Grid, Box, Typography, Button } from '@mui/material';
 import { Paper } from '@mui/material'
 import companyprofile from './../asserts/circuitImageForBanner.jpg';
@@ -17,10 +17,13 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import MobileStepper from '@mui/material/MobileStepper';
 import ProductSpecsContainer from './ProductSpecsContainer';
 import Card from '@mui/material/Card';
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 import homeSeriesmainImage from '../asserts/productsBG.jpg';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import Popover from '@mui/material/Popover';
 import productSpec1 from '../asserts/spec - belt.jpg';
 import productSpec2 from '../asserts/spec - rope.jpg';
@@ -75,14 +78,17 @@ const onDownload = () => {
   link.click();
 };
 
-function showProductsForDesktop(props,handlePopoverOpen, 
+function showProductsForDesktop(props, handlePopoverOpen,
   handlePopoverClose,
   anchorEl,
   anchorEl1,
   anchorEl2,
   anchorEl3,
   anchorEl4) {
-
+  const content = [{ icon: EngineeringIcon, title: 'Expertise In GearLess', des: "Through our expertise in engineering. We have developed a high-quality gearless home elevator.The result is a high-performance addition to your home that you can hardly hear, even when you put your ear right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfect home elevator." },
+  { icon: TipsAndUpdatesIcon, title: 'Energy Efficient', des: "In today's world, energy efficiency is paramount, and Brio Elevators stands at the forefront of Evolutionizing vertical Transportation by prioritizing sustainability. Our Elevators are Engineered to not only elevate people but also Elevate energy efficiency to new heights."},
+  { icon: PsychologyIcon, title:'Intelligent control systems', des:"Our Elevators are equipped with Intelligent Control Systems that adapt to usage patterns. They optimize elevator operation by predicting passenger demand, reducing unnecessary stops, and minimizing idle time, all while conserving energy."},
+  { icon: TipsAndUpdatesIcon, title: 'Reliable solutions', des: "In case of a power failure, our home elevators will continue to work from a battery, allowing the user to reach the ground floor safely. It is also possible to connect a Fire Alarm System to the main Electronic Board."}]
   return <Grid id="productsCont" sx={{ display: 'flex', flexDirection: 'column', paddingTop: '4rem' }}>
 
     <Grid item>
@@ -101,7 +107,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
             </Grid> */}
           </Grid>
 
-          <Typography fontFamily= 'Didact Gothic' variant='h6' sx={{ color: HeaderColor, padding: '0 2.5rem 0 2.5rem', color: SubHeaderColor }}>"Our extensive product lineup ensures that we provide an
+          <Typography fontFamily='Didact Gothic' variant='h6' sx={{ color: HeaderColor, padding: '0 2.5rem 0 2.5rem', color: SubHeaderColor }}>"Our extensive product lineup ensures that we provide an
             <span style={{ fontWeight: 'bold' }}> accessibility solution</span> tailored to every home. Just as each unit is uniquely crafted to user specifications,
             our diverse product range is meticulously designed to cater to the individual needs of every customer.
             As one of the rare companies in India, we deliver elevator solutions across multiple segments, including <span style={{ fontWeight: 'bold' }}>Home Elevators,
@@ -113,7 +119,7 @@ function showProductsForDesktop(props,handlePopoverOpen,
           <Card>
             <Box sx={{ position: 'relative' }}>
               <CardMedia
-                sx={{ height: { sm:'175vh', md:'125vh', lg:'110vh'}, backgroundColor: 'white', opacity: 0.12 }}
+                sx={{ height: { sm: '175vh', md: '125vh', lg: '110vh' }, backgroundColor: 'white', opacity: 0.12 }}
                 image={homeSeriesmainImage}
               />
               <Box
@@ -337,21 +343,20 @@ function showProductsForDesktop(props,handlePopoverOpen,
     </Grid>
 
     <Box padding='0rem'>
-      <ProductSpecsContainer isDeskTopDevice={props.isDeskTopDevice} />
-      <Grid container>
-        <Grid item>
-          
+      {/* <ProductSpecsContainer isDeskTopDevice={props.isDeskTopDevice} /> */}
+      <Grid container spacing={4} justifyContent={"center"} alignItems={"center"} sx={{ backgroundColor: '#faf6ed', p: "4rem 4rem" }}>
+        {content.map((eachContent)=> (
+          <Grid item sm={6} md={3}>
+          {informationFeild(eachContent)}
         </Grid>
-        <Grid item></Grid>
-        <Grid item></Grid>
-        <Grid item></Grid>
+        ))}
       </Grid>
     </Box>
 
     <Grid item sx={{ display: 'flex', justifyContent: 'end', width: '100%', padding: '2rem 3rem 1rem 0rem' }}>
       <Button variant="contained"
         sx={{
-          width: '20%',
+          // width: '20%',
           boxShadow: '10px 10px 5px #3930306e',
           padding: '0.9rem',
           fontSize: '1rem',
@@ -366,6 +371,18 @@ function showProductsForDesktop(props,handlePopoverOpen,
   </Grid>
 }
 
+
+function informationFeild(content) {
+  return <Box textAlign={"center"}>
+    <content.icon sx={{ fontSize: '4rem' }} color="action" />
+    <Typography variant='h6' fontFamily='Didact Gothic' color={HeaderColor}>Expertise In GearLess</Typography>
+    <Box textAlign={'left'} sx={{ color: '#00264d', fontFamily: 'Didact Gothic' }}>
+      Through our expertise in engineering. We have developed a high-quality gearless home elevator.
+      The result is a high-performance addition to your home that you can hardly hear, even when you put your ear
+      right next to the walls. Select furnishing from our beautiful cabin styles and options and you've got the perfecthome
+      elevator.</Box>
+  </Box>;
+}
 
 function showProductsForMobile(theme, activeStep, setActiveStep) {
 
@@ -496,12 +513,12 @@ function ProductsElevationContainer(props) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
-  const [anchorEl, setAnchorEl] =   useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const [anchorEl1, setAnchorEl1] = useState(null);
   const [anchorEl2, setAnchorEl2] = useState(null);
   const [anchorEl3, setAnchorEl3] = useState(null);
   const [anchorEl4, setAnchorEl4] = useState(null);
-  
+
   const handlePopoverOpen = (e, name) => {
 
     setAnchorEl(e.currentTarget);
@@ -545,17 +562,17 @@ function ProductsElevationContainer(props) {
   };
 
   return (
-    <>{showProductsForDesktop(props, 
-    handlePopoverOpen, 
-    handlePopoverClose,
-    anchorEl,
-    anchorEl1,
-    anchorEl2,
-    anchorEl3,
-    anchorEl4
-     )}
+    <>{showProductsForDesktop(props,
+      handlePopoverOpen,
+      handlePopoverClose,
+      anchorEl,
+      anchorEl1,
+      anchorEl2,
+      anchorEl3,
+      anchorEl4
+    )}
       {/* {!props.isDeskTopDevice && showProductsForMobile(theme, activeStep, setActiveStep)} */}
-      </>
+    </>
   );
 }
 

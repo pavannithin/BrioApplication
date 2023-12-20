@@ -14,15 +14,15 @@ function SubmitQueryContainer(props) {
   if (props.isDeskTopDevice) {
     return (
       <Box sx={{
-        height: '70vh',
+        // height: '70vh',
         width: '100%',
         // dispaly: 'flex', 
         // justifyContent: 'center', 
         textAlign: 'center',
-        paddingTop: '6rem'
+        // paddingTop: '6rem'
       }}>
 
-        <Grid sx={{
+        <Grid container sx={{
           display: 'flex',
           flexDirection: 'row',
           // justifyContent: 'center',
@@ -31,14 +31,14 @@ function SubmitQueryContainer(props) {
           backgroundColor: '#0a5a7880',
           height: '100%'
         }}>
-          <Grid item sx={{ width: '50%', display: 'flex', justifyContent: 'start' }}>
+          <Grid md={6} item sx={{ display: 'flex', justifyContent: 'start' }}>
             <img
               src={nopitElevatioinImage}
               height='100%'
               width='75%'
             />
           </Grid>
-          <Grid item sx={{ width: '50%', paddingTop: '5rem' }}>
+          <Grid item md={6} sx={{ paddingTop: '5rem' }}>
 
             <Paper sx={{ width: '60%', backgroundColor: '#0a5a7891', borderRadius: '0.5rem', border: '2px solid #03405791'}} elevation={8}>
               <Box sx={{ padding: '1.5rem' }}>

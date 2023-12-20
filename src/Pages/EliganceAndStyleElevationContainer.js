@@ -37,7 +37,7 @@ function EliganceAndStyleElevationContainer(props) {
 
   if(props.isDeskTopDevice) {
     return (
-      <Box sx={{ height: "90vh", padding: "0rem 5rem 0rem 5rem" }}>
+      <Box sx={{ height: {sm: "110vh", md: "90vh"}, padding: "0rem 5rem 0rem 5rem" }}>
         <Grid
           sx={{
             display: "flex",
@@ -47,7 +47,7 @@ function EliganceAndStyleElevationContainer(props) {
             padding: "3rem 4rem 0rem 4rem",
           }}
         >
-          <Grid
+          {/* <Grid
             item
             sx={{
               width: "3%",
@@ -63,7 +63,7 @@ function EliganceAndStyleElevationContainer(props) {
               width="90%"
               color="#104c8a"
             />
-          </Grid>
+          </Grid> */}
           <Grid item>
             <Typography
               variant="h4"
@@ -72,7 +72,7 @@ function EliganceAndStyleElevationContainer(props) {
               Elegance and Style
             </Typography>
           </Grid>
-          <Grid item sx={{ width: "3%", alignContent: "center" }}>
+          {/* <Grid item sx={{ width: "3%", alignContent: "center" }}>
             <img
               src={
                 "https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg"
@@ -80,7 +80,7 @@ function EliganceAndStyleElevationContainer(props) {
               height="90%"
               width="90%"
             />
-          </Grid>
+          </Grid> */}
         </Grid>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Typography
@@ -98,7 +98,7 @@ function EliganceAndStyleElevationContainer(props) {
             while enhancing any environment.
           </Typography>
         </Box>
-        <Grid
+        <Grid container
           sx={{
             display: "flex",
             width: "auto",

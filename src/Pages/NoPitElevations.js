@@ -18,15 +18,15 @@ function NoPitElevations(props) {
 
   function showLeftContainerForDeskTop() {
 
-    return <Box sx={{ width: '50%', height: '100%' }}>
+    return <Box sx={{ width: {sm: '60%',md: '50%'}, height: '100%' }}>
 
       <Box>
         <Typography variant='h4' >Brio's NEW GENERATION lifts</Typography>
       </Box>
-      <Grid sx={{ display: 'flex', flexWrap: 'wrap', paddingTop: '6%' }}>
+      <Grid container sx={{ display: 'flex', flexWrap: 'wrap', paddingTop: '6%' }}>
 
-        <Grid item sx={{ height: '22%', width: '46%', padding: '1rem 4rem 1rem 0' }}>
-          <Grid sx={{ display: 'flex' }}>
+        {/* <Grid item md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
+          <Grid container>
             <Grid item>
               <ChangeHistoryIcon sx={{ fontSize: 40 }} />
             </Grid>
@@ -46,9 +46,33 @@ function NoPitElevations(props) {
               </Grid>
             </Grid>
           </Grid>
+        </Grid> */}
+        <Grid item sm={12}  md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
+          <Grid sx={{ display: 'flex' }}>
+            <Grid item>
+              <ChangeHistoryIcon sx={{ fontSize: 40 }} />
+            </Grid>
+            <Grid item>
+              <Grid sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <Grid item>
+                  <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                    <Grid item sx={{ padding: '0.4rem 0 0.4rem 0.4rem', textAlign: 'start' }}>
+                      <Typography variant='h5'>No Pit</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item textAlign='start' color='white' sx={{ maxHeight: '10vh', overflow: 'hidden' }}>
+                  <Typography variant='body1'>Our Home elevators do not require
+                    a pit of more than 150 to 250mm
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
 
-        <Grid item sx={{ height: '22%', width: '46%', padding: '1rem 4rem 1rem 0' }}>
+
+        <Grid item  md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
           <Grid sx={{ display: 'flex' }}>
             <Grid item>
               <ChangeHistoryIcon sx={{ fontSize: 40 }} />
@@ -73,7 +97,7 @@ function NoPitElevations(props) {
           </Grid>
         </Grid>
 
-        <Grid item sx={{ height: '22%', width: '46%', padding: '1rem 4rem 1rem 0' }}>
+        <Grid item  md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
           <Grid sx={{ display: 'flex' }}>
             <Grid item>
               <ChangeHistoryIcon sx={{ fontSize: 40 }} />
@@ -97,7 +121,7 @@ function NoPitElevations(props) {
           </Grid>
         </Grid>
 
-        <Grid item sx={{ height: '22%', width: '46%', padding: '1rem 4rem 1rem 0' }}>
+        <Grid item  md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
           <Grid sx={{ display: 'flex', }}>
             <Grid item>
               <ChangeHistoryIcon sx={{ fontSize: 40 }} />
@@ -121,7 +145,7 @@ function NoPitElevations(props) {
           </Grid>
         </Grid>
 
-        <Grid item sx={{ height: '22%', width: '46%', padding: '1rem 4rem 1rem 0' }}>
+        <Grid item  md={6} sx={{ height: '22%', padding: '1rem 4rem 1rem 0' }}>
           <Grid sx={{ display: 'flex', }}>
             <Grid item>
               <ChangeHistoryIcon sx={{ fontSize: 40 }} />
@@ -389,8 +413,9 @@ function NoPitElevations(props) {
 
   return (
     <>
-      {props.isDeskTopDevice && showForDeskTop()}
-      {!props.isDeskTopDevice && showForMobile()}
+      {/* {props.isDeskTopDevice && showForDeskTop()} */}
+      {/* {!props.isDeskTopDevice && showForMobile()} */}
+      {showForDeskTop()}
     </>
   );
 }

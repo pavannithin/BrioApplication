@@ -115,13 +115,13 @@ function showTransmission(isDeskTopDevice, deskTopitems, mobileitems) {
 
 function ReviewsContainer(props) {
 
-  if(props.isDeskTopDevice) {
+  // if(props.isDeskTopDevice) {
   return (
     <Grid sx={{
       paddingTop: '3rem',
       color: HeaderColor,
       flexDirection: 'column',
-      height: '70vh',
+      height: {sm:'55vh',md:'70vh'},
       width: '100%',
       dispaly: 'flex',
       justifyContent: 'center',
@@ -132,15 +132,15 @@ function ReviewsContainer(props) {
         <Typography variant='h6' sx={{ fontWeight: 'bold', color: GoldColor }}>What our customers are saying</Typography>
         {/* <Typography variant='h3' sx={{ fontWeight: '2rem' }}>Our Happy Customers</Typography> */}
         <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
-            <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+            {/* <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' color='#104c8a' />
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Typography variant='h3' sx={{fontWeight: '2rem', paddingTop: '0.5rem', color: HeaderColor }}>Our Happy Customers</Typography>
             </Grid>
-            <Grid item sx={{ width: '3%', alignContent: 'center' }}>
+            {/* <Grid item sx={{ width: '3%', alignContent: 'center' }}>
               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
-            </Grid>
+            </Grid> */}
           </Grid>
       </Grid>
       <Grid item>
@@ -168,61 +168,61 @@ function ReviewsContainer(props) {
       </Grid>
     </Grid>
   );
-  } else {
-    return (
-      <Grid sx={{
-        paddingTop: '2rem',
-        color: HeaderColor,
-        flexDirection: 'column',
-        height: '77vh',
-        width: '100%',
-        dispaly: 'flex',
-        justifyContent: 'center',
-        textAlign: 'center',
-        backgroundColor: '#faf6ed'
-      }}>
-        <Grid item sx={{ padding: '0rem 3rem 1rem 3rem' }}>
-          <Typography variant='h6' sx={{ fontWeight: 'bold', color: GoldColor }}>What our customers are saying</Typography>
-          {/* <Typography variant='h3' sx={{ fontWeight: '2rem' }}>Our Happy Customers</Typography> */}
-          <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
-              {/* <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
-                <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' color='#104c8a' />
-              </Grid> */}
-              <Grid item>
-                <Typography variant='h4' sx={{fontWeight: '2rem', paddingTop: '0.5rem', color: HeaderColor }}>Our Happy Customers</Typography>
-              </Grid>
-              {/* <Grid item sx={{ width: '3%', alignContent: 'center' }}>
-                <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
-              </Grid> */}
-            </Grid>
-        </Grid>
-        <Grid item>
-          <Grid sx={{ 
-            height: '30vh', 
-            // paddingTop: '0.5vh', 
-            paddingLeft: '2rem', 
-            paddingRight: '2rem' 
-            }}>
-            <Grid item sx={{ 
-              height: '30vh', 
-              padding: '0.5vh' }}>
-              <Carousel
-                autoPlay
-                interval={2000}
-                duration={500}
-                animation={"slide"}
-                next={() => {/* Do stuff */ }}
-                prev={() => {/* Do other stuff */ }}
-              >
-                {showTransmission(props.isDeskTopDevice, deskTopitems, mobileitems)}
-              </Carousel>
-            </Grid>
-          </Grid>
+  // } else {
+  //   return (
+  //     <Grid sx={{
+  //       paddingTop: '2rem',
+  //       color: HeaderColor,
+  //       flexDirection: 'column',
+  //       height: '77vh',
+  //       width: '100%',
+  //       dispaly: 'flex',
+  //       justifyContent: 'center',
+  //       textAlign: 'center',
+  //       backgroundColor: '#faf6ed'
+  //     }}>
+  //       <Grid item sx={{ padding: '0rem 3rem 1rem 3rem' }}>
+  //         <Typography variant='h6' sx={{ fontWeight: 'bold', color: GoldColor }}>What our customers are saying</Typography>
+  //         {/* <Typography variant='h3' sx={{ fontWeight: '2rem' }}>Our Happy Customers</Typography> */}
+  //         <Grid sx={{ display: 'flex', columnGap: '1.5rem', width: '100%', justifyContent: 'center', paddingBottom: '2rem' }}>
+  //             {/* <Grid item sx={{ width: '3%', alignContent: 'center', transform: 'rotateY(180deg)' }}>
+  //               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' color='#104c8a' />
+  //             </Grid> */}
+  //             <Grid item>
+  //               <Typography variant='h4' sx={{fontWeight: '2rem', paddingTop: '0.5rem', color: HeaderColor }}>Our Happy Customers</Typography>
+  //             </Grid>
+  //             {/* <Grid item sx={{ width: '3%', alignContent: 'center' }}>
+  //               <img src={'https://assets-global.website-files.com/6011ced336f3c77caf0e1dad/61b77d0cf185ea70e4ca17a0_crest-right.svg'} height='90%' width='90%' />
+  //             </Grid> */}
+  //           </Grid>
+  //       </Grid>
+  //       <Grid item>
+  //         <Grid sx={{ 
+  //           height: '30vh', 
+  //           // paddingTop: '0.5vh', 
+  //           paddingLeft: '2rem', 
+  //           paddingRight: '2rem' 
+  //           }}>
+  //           <Grid item sx={{ 
+  //             height: '30vh', 
+  //             padding: '0.5vh' }}>
+  //             <Carousel
+  //               autoPlay
+  //               interval={2000}
+  //               duration={500}
+  //               animation={"slide"}
+  //               next={() => {/* Do stuff */ }}
+  //               prev={() => {/* Do other stuff */ }}
+  //             >
+  //               {showTransmission(props.isDeskTopDevice, deskTopitems, mobileitems)}
+  //             </Carousel>
+  //           </Grid>
+  //         </Grid>
   
-        </Grid>
-      </Grid>
-    );
-  } 
+  //       </Grid>
+  //     </Grid>
+  //   );
+  // } 
 }
 
 export default ReviewsContainer;
